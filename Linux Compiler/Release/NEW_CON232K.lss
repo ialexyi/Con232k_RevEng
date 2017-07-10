@@ -1,0 +1,1994 @@
+
+NEW_CON232K.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000008  00800100  00001408  0000149c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00001408  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000148  00800108  00800108  000014a4  2**0
+                  ALLOC
+  3 .stab         00000738  00000000  00000000  000014a4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000082  00000000  00000000  00001bdc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	fe c2       	rjmp	.+1532   	; 0x5fe <__ctors_end>
+       2:	f4 c7       	rjmp	.+4072   	; 0xfec <__vector_1>
+       4:	17 c3       	rjmp	.+1582   	; 0x634 <__bad_interrupt>
+       6:	16 c3       	rjmp	.+1580   	; 0x634 <__bad_interrupt>
+       8:	15 c3       	rjmp	.+1578   	; 0x634 <__bad_interrupt>
+       a:	4e c8       	rjmp	.-3940   	; 0xfffff0a8 <__eeprom_end+0xff7ef0a8>
+       c:	13 c3       	rjmp	.+1574   	; 0x634 <__bad_interrupt>
+       e:	12 c3       	rjmp	.+1572   	; 0x634 <__bad_interrupt>
+      10:	11 c3       	rjmp	.+1570   	; 0x634 <__bad_interrupt>
+      12:	10 c3       	rjmp	.+1568   	; 0x634 <__bad_interrupt>
+      14:	0f c3       	rjmp	.+1566   	; 0x634 <__bad_interrupt>
+      16:	0e c3       	rjmp	.+1564   	; 0x634 <__bad_interrupt>
+      18:	0d c3       	rjmp	.+1562   	; 0x634 <__bad_interrupt>
+      1a:	0c c3       	rjmp	.+1560   	; 0x634 <__bad_interrupt>
+      1c:	0b c3       	rjmp	.+1558   	; 0x634 <__bad_interrupt>
+      1e:	0a c3       	rjmp	.+1556   	; 0x634 <__bad_interrupt>
+      20:	09 c3       	rjmp	.+1554   	; 0x634 <__bad_interrupt>
+      22:	08 c3       	rjmp	.+1552   	; 0x634 <__bad_interrupt>
+      24:	22 c9       	rjmp	.-3516   	; 0xfffff26a <__eeprom_end+0xff7ef26a>
+      26:	57 c9       	rjmp	.-3410   	; 0xfffff2d6 <__eeprom_end+0xff7ef2d6>
+      28:	05 c3       	rjmp	.+1546   	; 0x634 <__bad_interrupt>
+      2a:	04 c3       	rjmp	.+1544   	; 0x634 <__bad_interrupt>
+      2c:	03 c3       	rjmp	.+1542   	; 0x634 <__bad_interrupt>
+      2e:	02 c3       	rjmp	.+1540   	; 0x634 <__bad_interrupt>
+      30:	01 c3       	rjmp	.+1538   	; 0x634 <__bad_interrupt>
+      32:	00 c3       	rjmp	.+1536   	; 0x634 <__bad_interrupt>
+      34:	a5 c4       	rjmp	.+2378   	; 0x980 <main+0x2de>
+      36:	95 c4       	rjmp	.+2346   	; 0x962 <main+0x2c0>
+      38:	fd c4       	rjmp	.+2554   	; 0xa34 <main+0x392>
+      3a:	a2 c4       	rjmp	.+2372   	; 0x980 <main+0x2de>
+      3c:	fb c4       	rjmp	.+2550   	; 0xa34 <main+0x392>
+      3e:	64 c4       	rjmp	.+2248   	; 0x908 <main+0x266>
+      40:	9f c4       	rjmp	.+2366   	; 0x980 <main+0x2de>
+      42:	ad c4       	rjmp	.+2394   	; 0x99e <main+0x2fc>
+      44:	ae c4       	rjmp	.+2396   	; 0x9a2 <main+0x300>
+      46:	f6 c4       	rjmp	.+2540   	; 0xa34 <main+0x392>
+      48:	f5 c4       	rjmp	.+2538   	; 0xa34 <main+0x392>
+      4a:	f4 c4       	rjmp	.+2536   	; 0xa34 <main+0x392>
+      4c:	f3 c4       	rjmp	.+2534   	; 0xa34 <main+0x392>
+      4e:	f2 c4       	rjmp	.+2532   	; 0xa34 <main+0x392>
+      50:	f1 c4       	rjmp	.+2530   	; 0xa34 <main+0x392>
+      52:	f0 c4       	rjmp	.+2528   	; 0xa34 <main+0x392>
+      54:	ef c4       	rjmp	.+2526   	; 0xa34 <main+0x392>
+      56:	a7 c4       	rjmp	.+2382   	; 0x9a6 <main+0x304>
+      58:	bd c4       	rjmp	.+2426   	; 0x9d4 <main+0x332>
+      5a:	dd c4       	rjmp	.+2490   	; 0xa16 <main+0x374>
+      5c:	e5 c4       	rjmp	.+2506   	; 0xa28 <main+0x386>
+      5e:	be c4       	rjmp	.+2428   	; 0x9dc <main+0x33a>
+      60:	e3 c4       	rjmp	.+2502   	; 0xa28 <main+0x386>
+      62:	d9 c4       	rjmp	.+2482   	; 0xa16 <main+0x374>
+      64:	d4 c4       	rjmp	.+2472   	; 0xa0e <main+0x36c>
+      66:	d7 c4       	rjmp	.+2478   	; 0xa16 <main+0x374>
+      68:	d6 c4       	rjmp	.+2476   	; 0xa16 <main+0x374>
+      6a:	de c4       	rjmp	.+2492   	; 0xa28 <main+0x386>
+      6c:	dd c4       	rjmp	.+2490   	; 0xa28 <main+0x386>
+      6e:	dc c4       	rjmp	.+2488   	; 0xa28 <main+0x386>
+      70:	db c4       	rjmp	.+2486   	; 0xa28 <main+0x386>
+      72:	da c4       	rjmp	.+2484   	; 0xa28 <main+0x386>
+      74:	d9 c4       	rjmp	.+2482   	; 0xa28 <main+0x386>
+      76:	d8 c4       	rjmp	.+2480   	; 0xa28 <main+0x386>
+      78:	d7 c4       	rjmp	.+2478   	; 0xa28 <main+0x386>
+      7a:	cd c4       	rjmp	.+2458   	; 0xa16 <main+0x374>
+      7c:	cc c4       	rjmp	.+2456   	; 0xa16 <main+0x374>
+
+0000007e <ScanCodeList>:
+	...
+      86:	00 00 00 06 14 1c f0 1c f0 14 00 00 00 00 05 e0     ................
+      96:	1f e0 f0 1f 00 00 00 00 00 05 e0 2f e0 f0 2f 00     .........../../.
+      a6:	00 00 00 00 05 e0 7d e0 f0 7d 00 00 00 00 00 05     ......}..}......
+      b6:	e0 7a e0 f0 7a 00 00 00 00 00 05 e0 6c e0 f0 6c     .z..z.......l..l
+      c6:	00 00 00 00 00 05 e0 69 e0 f0 69 00 00 00 00 00     .......i..i.....
+      d6:	03 66 f0 66 00 00 00 00 00 00 00 03 0d f0 0d 00     .f.f............
+      e6:	00 00 00 00 00 00 03 5a f0 5a 00 00 00 00 00 00     .......Z.Z......
+      f6:	00 03 58 f0 58 00 00 00 00 00 00 00 06 14 12 f0     ..X.X...........
+     106:	12 f0 14 00 00 00 00 06 14 5a f0 5a f0 14 00 00     .........Z.Z....
+     116:	00 00 05 e0 71 e0 f0 71 00 00 00 00 00 03 05 f0     ....q..q........
+     126:	05 00 00 00 00 00 00 00 03 06 f0 06 00 00 00 00     ................
+     136:	00 00 00 03 04 f0 04 00 00 00 00 00 00 00 03 0c     ................
+     146:	f0 0c 00 00 00 00 00 00 00 03 03 f0 03 00 00 00     ................
+     156:	00 00 00 00 03 0b f0 0b 00 00 00 00 00 00 00 03     ................
+     166:	83 f0 83 00 00 00 00 00 00 00 03 0a f0 0a 00 00     ................
+     176:	00 00 00 00 00 03 01 f0 01 00 00 00 00 00 00 00     ................
+     186:	03 09 f0 09 00 00 00 00 00 00 00 03 78 f0 78 00     ............x.x.
+     196:	00 00 00 00 00 00 03 07 f0 07 00 00 00 00 00 00     ................
+     1a6:	00 03 76 f0 76 00 00 00 00 00 00 00 03 14 00 00     ..v.v...........
+     1b6:	00 00 00 00 00 00 00 03 f0 14 00 00 00 00 00 00     ................
+     1c6:	00 00 01 11 00 00 00 00 00 00 00 00 00 03 f0 11     ................
+	...
+     1de:	03 29 f0 29 00 00 00 00 00 00 00 06 59 16 f0 16     .).)........Y...
+     1ee:	f0 59 00 00 00 00 06 59 52 f0 52 f0 59 00 00 00     .Y.....YR.R.Y...
+     1fe:	00 06 59 26 f0 26 f0 59 00 00 00 00 06 59 25 f0     ..Y&.&.Y.....Y%.
+     20e:	25 f0 59 00 00 00 00 06 59 2e f0 2e f0 59 00 00     %.Y.....Y....Y..
+     21e:	00 00 06 59 3d f0 3d f0 59 00 00 00 00 03 52 f0     ...Y=.=.Y.....R.
+     22e:	52 00 00 00 00 00 00 00 06 59 46 f0 46 f0 59 00     R........YF.F.Y.
+     23e:	00 00 00 06 59 45 f0 45 f0 59 00 00 00 00 06 59     ....YE.E.Y.....Y
+     24e:	3e f0 3e f0 59 00 00 00 00 06 59 55 f0 55 f0 59     >.>.Y.....YU.U.Y
+     25e:	00 00 00 00 03 41 f0 41 00 00 00 00 00 00 00 03     .....A.A........
+     26e:	4e f0 4e 00 00 00 00 00 00 00 03 49 f0 49 00 00     N.N........I.I..
+     27e:	00 00 00 00 00 03 4a f0 4a 00 00 00 00 00 00 00     ......J.J.......
+     28e:	03 45 f0 45 00 00 00 00 00 00 00 03 16 f0 16 00     .E.E............
+     29e:	00 00 00 00 00 00 03 1e f0 1e 00 00 00 00 00 00     ................
+     2ae:	00 03 26 f0 26 00 00 00 00 00 00 00 03 25 f0 25     ..&.&........%.%
+     2be:	00 00 00 00 00 00 00 03 2e f0 2e 00 00 00 00 00     ................
+     2ce:	00 00 03 36 f0 36 00 00 00 00 00 00 00 03 3d f0     ...6.6........=.
+     2de:	3d 00 00 00 00 00 00 00 03 3e f0 3e 00 00 00 00     =........>.>....
+     2ee:	00 00 00 03 46 f0 46 00 00 00 00 00 00 00 06 59     ....F.F........Y
+     2fe:	4c f0 4c f0 59 00 00 00 00 03 4c f0 4c 00 00 00     L.L.Y.....L.L...
+     30e:	00 00 00 00 06 59 41 f0 41 f0 59 00 00 00 00 03     .....YA.A.Y.....
+     31e:	55 f0 55 00 00 00 00 00 00 00 06 59 49 f0 49 f0     U.U........YI.I.
+     32e:	59 00 00 00 00 06 59 4a f0 4a f0 59 00 00 00 00     Y.....YJ.J.Y....
+     33e:	06 12 1e f0 1e f0 12 00 00 00 00 06 12 1c f0 1c     ................
+     34e:	f0 12 00 00 00 00 06 12 32 f0 32 f0 12 00 00 00     ........2.2.....
+     35e:	00 06 12 21 f0 21 f0 12 00 00 00 00 06 12 23 f0     ...!.!........#.
+     36e:	23 f0 12 00 00 00 00 06 12 24 f0 24 f0 12 00 00     #........$.$....
+     37e:	00 00 06 12 2b f0 2b f0 12 00 00 00 00 06 12 34     ....+.+........4
+     38e:	f0 34 f0 12 00 00 00 00 06 12 33 f0 33 f0 12 00     .4........3.3...
+     39e:	00 00 00 06 12 43 f0 43 f0 12 00 00 00 00 06 12     .....C.C........
+     3ae:	3b f0 3b f0 12 00 00 00 00 06 12 42 f0 42 f0 12     ;.;........B.B..
+     3be:	00 00 00 00 06 12 4b f0 4b f0 12 00 00 00 00 06     ......K.K.......
+     3ce:	12 3a f0 3a f0 12 00 00 00 00 06 12 31 f0 31 f0     .:.:........1.1.
+     3de:	12 00 00 00 00 06 12 44 f0 44 f0 12 00 00 00 00     .......D.D......
+     3ee:	06 12 4d f0 4d f0 12 00 00 00 00 06 12 15 f0 15     ..M.M...........
+     3fe:	f0 12 00 00 00 00 06 12 2d f0 2d f0 12 00 00 00     ........-.-.....
+     40e:	00 06 12 1b f0 1b f0 12 00 00 00 00 06 12 2c f0     ..............,.
+     41e:	2c f0 12 00 00 00 00 06 12 3c f0 3c f0 12 00 00     ,........<.<....
+     42e:	00 00 06 12 2a f0 2a f0 12 00 00 00 00 06 12 1d     ....*.*.........
+     43e:	f0 1d f0 12 00 00 00 00 06 12 22 f0 22 f0 12 00     .........."."...
+     44e:	00 00 00 06 12 35 f0 35 f0 12 00 00 00 00 06 12     .....5.5........
+     45e:	1a f0 1a f0 12 00 00 00 00 03 54 f0 54 00 00 00     ..........T.T...
+     46e:	00 00 00 00 03 5d f0 5d 00 00 00 00 00 00 00 03     .....].]........
+     47e:	5b f0 5b 00 00 00 00 00 00 00 06 12 36 f0 36 f0     [.[.........6.6.
+     48e:	12 00 00 00 00 06 12 4e f0 4e f0 12 00 00 00 00     .......N.N......
+     49e:	06 12 0e f0 0e f0 12 00 00 00 00 03 1c f0 1c 00     ................
+     4ae:	00 00 00 00 00 00 03 32 f0 32 00 00 00 00 00 00     .......2.2......
+     4be:	00 03 21 f0 21 00 00 00 00 00 00 00 03 23 f0 23     ..!.!........#.#
+     4ce:	00 00 00 00 00 00 00 03 24 f0 24 00 00 00 00 00     ........$.$.....
+     4de:	00 00 03 2b f0 2b 00 00 00 00 00 00 00 03 34 f0     ...+.+........4.
+     4ee:	34 00 00 00 00 00 00 00 03 33 f0 33 00 00 00 00     4........3.3....
+     4fe:	00 00 00 03 43 f0 43 00 00 00 00 00 00 00 03 3b     ....C.C........;
+     50e:	f0 3b 00 00 00 00 00 00 00 03 42 f0 42 00 00 00     .;........B.B...
+     51e:	00 00 00 00 03 4b f0 4b 00 00 00 00 00 00 00 03     .....K.K........
+     52e:	3a f0 3a 00 00 00 00 00 00 00 03 31 f0 31 00 00     :.:........1.1..
+     53e:	00 00 00 00 00 03 44 f0 44 00 00 00 00 00 00 00     ......D.D.......
+     54e:	03 4d f0 4d 00 00 00 00 00 00 00 03 15 f0 15 00     .M.M............
+     55e:	00 00 00 00 00 00 03 2d f0 2d 00 00 00 00 00 00     .......-.-......
+     56e:	00 03 1b f0 1b 00 00 00 00 00 00 00 03 2c f0 2c     .............,.,
+     57e:	00 00 00 00 00 00 00 03 3c f0 3c 00 00 00 00 00     ........<.<.....
+     58e:	00 00 03 2a f0 2a 00 00 00 00 00 00 00 03 1d f0     ...*.*..........
+     59e:	1d 00 00 00 00 00 00 00 03 22 f0 22 00 00 00 00     ........."."....
+     5ae:	00 00 00 03 35 f0 35 00 00 00 00 00 00 00 03 1a     ....5.5.........
+     5be:	f0 1a 00 00 00 00 00 00 00 06 12 54 f0 54 f0 12     ...........T.T..
+     5ce:	00 00 00 00 06 12 5d f0 5d f0 12 00 00 00 00 06     ......].].......
+     5de:	12 5b f0 5b f0 12 00 00 00 00 03 0e f0 0e 00 00     .[.[............
+     5ee:	00 00 00 00 00 05 e0 71 e0 f0 71 00 00 00 00 00     .......q..q.....
+
+000005fe <__ctors_end>:
+     5fe:	11 24       	eor	r1, r1
+     600:	1f be       	out	0x3f, r1	; 63
+     602:	cf ef       	ldi	r28, 0xFF	; 255
+     604:	d4 e0       	ldi	r29, 0x04	; 4
+     606:	de bf       	out	0x3e, r29	; 62
+     608:	cd bf       	out	0x3d, r28	; 61
+
+0000060a <__do_copy_data>:
+     60a:	11 e0       	ldi	r17, 0x01	; 1
+     60c:	a0 e0       	ldi	r26, 0x00	; 0
+     60e:	b1 e0       	ldi	r27, 0x01	; 1
+     610:	e8 e0       	ldi	r30, 0x08	; 8
+     612:	f4 e1       	ldi	r31, 0x14	; 20
+     614:	02 c0       	rjmp	.+4      	; 0x61a <__do_copy_data+0x10>
+     616:	05 90       	lpm	r0, Z+
+     618:	0d 92       	st	X+, r0
+     61a:	a8 30       	cpi	r26, 0x08	; 8
+     61c:	b1 07       	cpc	r27, r17
+     61e:	d9 f7       	brne	.-10     	; 0x616 <__do_copy_data+0xc>
+
+00000620 <__do_clear_bss>:
+     620:	12 e0       	ldi	r17, 0x02	; 2
+     622:	a8 e0       	ldi	r26, 0x08	; 8
+     624:	b1 e0       	ldi	r27, 0x01	; 1
+     626:	01 c0       	rjmp	.+2      	; 0x62a <.do_clear_bss_start>
+
+00000628 <.do_clear_bss_loop>:
+     628:	1d 92       	st	X+, r1
+
+0000062a <.do_clear_bss_start>:
+     62a:	a0 35       	cpi	r26, 0x50	; 80
+     62c:	b1 07       	cpc	r27, r17
+     62e:	e1 f7       	brne	.-8      	; 0x628 <.do_clear_bss_loop>
+     630:	38 d0       	rcall	.+112    	; 0x6a2 <main>
+     632:	e8 c6       	rjmp	.+3536   	; 0x1404 <_exit>
+
+00000634 <__bad_interrupt>:
+     634:	e5 cc       	rjmp	.-1590   	; 0x0 <__vectors>
+
+00000636 <Set_Port_Bit>:
+     636:	fc 01       	movw	r30, r24
+     638:	44 23       	and	r20, r20
+     63a:	59 f0       	breq	.+22     	; 0x652 <Set_Port_Bit+0x1c>
+     63c:	20 81       	ld	r18, Z
+     63e:	81 e0       	ldi	r24, 0x01	; 1
+     640:	90 e0       	ldi	r25, 0x00	; 0
+     642:	02 c0       	rjmp	.+4      	; 0x648 <Set_Port_Bit+0x12>
+     644:	88 0f       	add	r24, r24
+     646:	99 1f       	adc	r25, r25
+     648:	6a 95       	dec	r22
+     64a:	e2 f7       	brpl	.-8      	; 0x644 <Set_Port_Bit+0xe>
+     64c:	28 2b       	or	r18, r24
+     64e:	20 83       	st	Z, r18
+     650:	08 95       	ret
+     652:	20 81       	ld	r18, Z
+     654:	81 e0       	ldi	r24, 0x01	; 1
+     656:	90 e0       	ldi	r25, 0x00	; 0
+     658:	02 c0       	rjmp	.+4      	; 0x65e <Set_Port_Bit+0x28>
+     65a:	88 0f       	add	r24, r24
+     65c:	99 1f       	adc	r25, r25
+     65e:	6a 95       	dec	r22
+     660:	e2 f7       	brpl	.-8      	; 0x65a <Set_Port_Bit+0x24>
+     662:	80 95       	com	r24
+     664:	82 23       	and	r24, r18
+     666:	80 83       	st	Z, r24
+     668:	08 95       	ret
+
+0000066a <SetDeviceToHostDirection>:
+     66a:	f8 94       	cli
+     66c:	80 e6       	ldi	r24, 0x60	; 96
+     66e:	8a b9       	out	0x0a, r24	; 10
+     670:	8b b9       	out	0x0b, r24	; 11
+     672:	08 95       	ret
+
+00000674 <ReadingFromHostDirection>:
+     674:	f8 94       	cli
+     676:	80 e2       	ldi	r24, 0x20	; 32
+     678:	8a b9       	out	0x0a, r24	; 10
+     67a:	8b b9       	out	0x0b, r24	; 11
+     67c:	08 95       	ret
+
+0000067e <ListeningtDirection>:
+     67e:	f8 94       	cli
+     680:	1a b8       	out	0x0a, r1	; 10
+     682:	1b b8       	out	0x0b, r1	; 11
+     684:	78 94       	sei
+     686:	08 95       	ret
+
+00000688 <SetHostToDeviceDirection>:
+     688:	f8 94       	cli
+     68a:	84 e8       	ldi	r24, 0x84	; 132
+     68c:	8a b9       	out	0x0a, r24	; 10
+     68e:	8b b9       	out	0x0b, r24	; 11
+     690:	08 95       	ret
+
+00000692 <WritingToDeviceDirection>:
+     692:	f8 94       	cli
+     694:	80 e8       	ldi	r24, 0x80	; 128
+     696:	8a b9       	out	0x0a, r24	; 10
+     698:	8b b9       	out	0x0b, r24	; 11
+     69a:	08 95       	ret
+
+0000069c <SystemInit>:
+     69c:	8f e0       	ldi	r24, 0x0F	; 15
+     69e:	87 b9       	out	0x07, r24	; 7
+     6a0:	08 95       	ret
+
+000006a2 <main>:
+     6a2:	ef 92       	push	r14
+     6a4:	ff 92       	push	r15
+     6a6:	0f 93       	push	r16
+     6a8:	1f 93       	push	r17
+     6aa:	df 93       	push	r29
+     6ac:	cf 93       	push	r28
+     6ae:	cd b7       	in	r28, 0x3d	; 61
+     6b0:	de b7       	in	r29, 0x3e	; 62
+     6b2:	a3 97       	sbiw	r28, 0x23	; 35
+     6b4:	0f b6       	in	r0, 0x3f	; 63
+     6b6:	f8 94       	cli
+     6b8:	de bf       	out	0x3e, r29	; 62
+     6ba:	0f be       	out	0x3f, r0	; 63
+     6bc:	cd bf       	out	0x3d, r28	; 61
+     6be:	de 01       	movw	r26, r28
+     6c0:	52 96       	adiw	r26, 0x12	; 18
+     6c2:	e0 e0       	ldi	r30, 0x00	; 0
+     6c4:	f1 e0       	ldi	r31, 0x01	; 1
+     6c6:	88 e0       	ldi	r24, 0x08	; 8
+     6c8:	01 90       	ld	r0, Z+
+     6ca:	0d 92       	st	X+, r0
+     6cc:	81 50       	subi	r24, 0x01	; 1
+     6ce:	e1 f7       	brne	.-8      	; 0x6c8 <main+0x26>
+     6d0:	19 82       	std	Y+1, r1	; 0x01
+     6d2:	1a 82       	std	Y+2, r1	; 0x02
+     6d4:	1b 82       	std	Y+3, r1	; 0x03
+     6d6:	1c 82       	std	Y+4, r1	; 0x04
+     6d8:	1d 82       	std	Y+5, r1	; 0x05
+     6da:	1e 82       	std	Y+6, r1	; 0x06
+     6dc:	1f 82       	std	Y+7, r1	; 0x07
+     6de:	18 86       	std	Y+8, r1	; 0x08
+     6e0:	19 86       	std	Y+9, r1	; 0x09
+     6e2:	1a 86       	std	Y+10, r1	; 0x0a
+     6e4:	1b 86       	std	Y+11, r1	; 0x0b
+     6e6:	1c 86       	std	Y+12, r1	; 0x0c
+     6e8:	1d 86       	std	Y+13, r1	; 0x0d
+     6ea:	1e 86       	std	Y+14, r1	; 0x0e
+     6ec:	1f 86       	std	Y+15, r1	; 0x0f
+     6ee:	18 8a       	std	Y+16, r1	; 0x10
+     6f0:	19 8a       	std	Y+17, r1	; 0x11
+     6f2:	3a e1       	ldi	r19, 0x1A	; 26
+     6f4:	e3 2e       	mov	r14, r19
+     6f6:	f1 2c       	mov	r15, r1
+     6f8:	ec 0e       	add	r14, r28
+     6fa:	fd 1e       	adc	r15, r29
+     6fc:	c7 01       	movw	r24, r14
+     6fe:	60 e0       	ldi	r22, 0x00	; 0
+     700:	70 e0       	ldi	r23, 0x00	; 0
+     702:	4a e0       	ldi	r20, 0x0A	; 10
+     704:	50 e0       	ldi	r21, 0x00	; 0
+     706:	77 d6       	rcall	.+3310   	; 0x13f6 <memset>
+     708:	8f e0       	ldi	r24, 0x0F	; 15
+     70a:	87 b9       	out	0x07, r24	; 7
+     70c:	85 b1       	in	r24, 0x05	; 5
+     70e:	82 95       	swap	r24
+     710:	86 95       	lsr	r24
+     712:	86 95       	lsr	r24
+     714:	83 70       	andi	r24, 0x03	; 3
+     716:	89 83       	std	Y+1, r24	; 0x01
+     718:	89 81       	ldd	r24, Y+1	; 0x01
+     71a:	90 e0       	ldi	r25, 0x00	; 0
+     71c:	88 0f       	add	r24, r24
+     71e:	99 1f       	adc	r25, r25
+     720:	fe 01       	movw	r30, r28
+     722:	31 96       	adiw	r30, 0x01	; 1
+     724:	e8 0f       	add	r30, r24
+     726:	f9 1f       	adc	r31, r25
+     728:	81 89       	ldd	r24, Z+17	; 0x11
+     72a:	92 89       	ldd	r25, Z+18	; 0x12
+     72c:	86 d5       	rcall	.+2828   	; 0x123a <USART_Init>
+     72e:	49 d4       	rcall	.+2194   	; 0xfc2 <Ps2Init>
+     730:	18 b8       	out	0x08, r1	; 8
+     732:	aa df       	rcall	.-172    	; 0x688 <SetHostToDeviceDirection>
+     734:	8b e2       	ldi	r24, 0x2B	; 43
+     736:	90 e0       	ldi	r25, 0x00	; 0
+     738:	62 e0       	ldi	r22, 0x02	; 2
+     73a:	47 e0       	ldi	r20, 0x07	; 7
+     73c:	13 d4       	rcall	.+2086   	; 0xf64 <Write_Ps2_HOST_REQUEST>
+     73e:	a9 df       	rcall	.-174    	; 0x692 <WritingToDeviceDirection>
+     740:	89 e2       	ldi	r24, 0x29	; 41
+     742:	90 e0       	ldi	r25, 0x00	; 0
+     744:	6b e2       	ldi	r22, 0x2B	; 43
+     746:	70 e0       	ldi	r23, 0x00	; 0
+     748:	42 e0       	ldi	r20, 0x02	; 2
+     74a:	27 e0       	ldi	r18, 0x07	; 7
+     74c:	0f ef       	ldi	r16, 0xFF	; 255
+     74e:	77 d3       	rcall	.+1774   	; 0xe3e <Push_PS2_Byte>
+     750:	8f ef       	ldi	r24, 0xFF	; 255
+     752:	8f 83       	std	Y+7, r24	; 0x07
+     754:	8f ef       	ldi	r24, 0xFF	; 255
+     756:	99 e6       	ldi	r25, 0x69	; 105
+     758:	a8 e1       	ldi	r26, 0x18	; 24
+     75a:	81 50       	subi	r24, 0x01	; 1
+     75c:	90 40       	sbci	r25, 0x00	; 0
+     75e:	a0 40       	sbci	r26, 0x00	; 0
+     760:	e1 f7       	brne	.-8      	; 0x75a <main+0xb8>
+     762:	00 c0       	rjmp	.+0      	; 0x764 <main+0xc2>
+     764:	00 00       	nop
+     766:	81 df       	rcall	.-254    	; 0x66a <SetDeviceToHostDirection>
+     768:	8b e2       	ldi	r24, 0x2B	; 43
+     76a:	90 e0       	ldi	r25, 0x00	; 0
+     76c:	65 e0       	ldi	r22, 0x05	; 5
+     76e:	46 e0       	ldi	r20, 0x06	; 6
+     770:	2a ef       	ldi	r18, 0xFA	; 250
+     772:	dd d2       	rcall	.+1466   	; 0xd2e <Write_Ps2_Byte>
+     774:	87 e0       	ldi	r24, 0x07	; 7
+     776:	88 b9       	out	0x08, r24	; 8
+     778:	78 94       	sei
+     77a:	88 e2       	ldi	r24, 0x28	; 40
+     77c:	90 e0       	ldi	r25, 0x00	; 0
+     77e:	62 e0       	ldi	r22, 0x02	; 2
+     780:	40 e0       	ldi	r20, 0x00	; 0
+     782:	59 df       	rcall	.-334    	; 0x636 <Set_Port_Bit>
+     784:	7c df       	rcall	.-264    	; 0x67e <ListeningtDirection>
+     786:	98 85       	ldd	r25, Y+8	; 0x08
+     788:	8d 81       	ldd	r24, Y+5	; 0x05
+     78a:	98 17       	cp	r25, r24
+     78c:	08 f4       	brcc	.+2      	; 0x790 <main+0xee>
+     78e:	81 c0       	rjmp	.+258    	; 0x892 <main+0x1f0>
+     790:	8b 85       	ldd	r24, Y+11	; 0x0b
+     792:	81 30       	cpi	r24, 0x01	; 1
+     794:	a9 f4       	brne	.+42     	; 0x7c0 <main+0x11e>
+     796:	78 df       	rcall	.-272    	; 0x688 <SetHostToDeviceDirection>
+     798:	8b e2       	ldi	r24, 0x2B	; 43
+     79a:	90 e0       	ldi	r25, 0x00	; 0
+     79c:	62 e0       	ldi	r22, 0x02	; 2
+     79e:	47 e0       	ldi	r20, 0x07	; 7
+     7a0:	e1 d3       	rcall	.+1986   	; 0xf64 <Write_Ps2_HOST_REQUEST>
+     7a2:	77 df       	rcall	.-274    	; 0x692 <WritingToDeviceDirection>
+     7a4:	89 e2       	ldi	r24, 0x29	; 41
+     7a6:	90 e0       	ldi	r25, 0x00	; 0
+     7a8:	6b e2       	ldi	r22, 0x2B	; 43
+     7aa:	70 e0       	ldi	r23, 0x00	; 0
+     7ac:	42 e0       	ldi	r20, 0x02	; 2
+     7ae:	27 e0       	ldi	r18, 0x07	; 7
+     7b0:	0d ee       	ldi	r16, 0xED	; 237
+     7b2:	45 d3       	rcall	.+1674   	; 0xe3e <Push_PS2_Byte>
+     7b4:	64 df       	rcall	.-312    	; 0x67e <ListeningtDirection>
+     7b6:	8d ee       	ldi	r24, 0xED	; 237
+     7b8:	8f 83       	std	Y+7, r24	; 0x07
+     7ba:	8b 85       	ldd	r24, Y+11	; 0x0b
+     7bc:	8f 5f       	subi	r24, 0xFF	; 255
+     7be:	8b 87       	std	Y+11, r24	; 0x0b
+     7c0:	5e d4       	rcall	.+2236   	; 0x107e <IsDataInPs2SnifferBuffer>
+     7c2:	88 23       	and	r24, r24
+     7c4:	09 f4       	brne	.+2      	; 0x7c8 <main+0x126>
+     7c6:	56 c0       	rjmp	.+172    	; 0x874 <main+0x1d2>
+     7c8:	81 e0       	ldi	r24, 0x01	; 1
+     7ca:	89 87       	std	Y+9, r24	; 0x09
+     7cc:	61 d4       	rcall	.+2242   	; 0x1090 <GetDataFromPs2SnifferBuffer>
+     7ce:	8a 83       	std	Y+2, r24	; 0x02
+     7d0:	8a 81       	ldd	r24, Y+2	; 0x02
+     7d2:	8a 3f       	cpi	r24, 0xFA	; 250
+     7d4:	71 f0       	breq	.+28     	; 0x7f2 <main+0x150>
+     7d6:	8b 3f       	cpi	r24, 0xFB	; 251
+     7d8:	28 f4       	brcc	.+10     	; 0x7e4 <main+0x142>
+     7da:	88 23       	and	r24, r24
+     7dc:	b1 f1       	breq	.+108    	; 0x84a <main+0x1a8>
+     7de:	8a 3a       	cpi	r24, 0xAA	; 170
+     7e0:	d1 f5       	brne	.+116    	; 0x856 <main+0x1b4>
+     7e2:	33 c0       	rjmp	.+102    	; 0x84a <main+0x1a8>
+     7e4:	8e 3f       	cpi	r24, 0xFE	; 254
+     7e6:	09 f1       	breq	.+66     	; 0x82a <main+0x188>
+     7e8:	8f 3f       	cpi	r24, 0xFF	; 255
+     7ea:	78 f5       	brcc	.+94     	; 0x84a <main+0x1a8>
+     7ec:	8c 3f       	cpi	r24, 0xFC	; 252
+     7ee:	99 f5       	brne	.+102    	; 0x856 <main+0x1b4>
+     7f0:	2c c0       	rjmp	.+88     	; 0x84a <main+0x1a8>
+     7f2:	8b 85       	ldd	r24, Y+11	; 0x0b
+     7f4:	82 30       	cpi	r24, 0x02	; 2
+     7f6:	a1 f4       	brne	.+40     	; 0x820 <main+0x17e>
+     7f8:	47 df       	rcall	.-370    	; 0x688 <SetHostToDeviceDirection>
+     7fa:	8b e2       	ldi	r24, 0x2B	; 43
+     7fc:	90 e0       	ldi	r25, 0x00	; 0
+     7fe:	62 e0       	ldi	r22, 0x02	; 2
+     800:	47 e0       	ldi	r20, 0x07	; 7
+     802:	b0 d3       	rcall	.+1888   	; 0xf64 <Write_Ps2_HOST_REQUEST>
+     804:	46 df       	rcall	.-372    	; 0x692 <WritingToDeviceDirection>
+     806:	0a 85       	ldd	r16, Y+10	; 0x0a
+     808:	89 e2       	ldi	r24, 0x29	; 41
+     80a:	90 e0       	ldi	r25, 0x00	; 0
+     80c:	6b e2       	ldi	r22, 0x2B	; 43
+     80e:	70 e0       	ldi	r23, 0x00	; 0
+     810:	42 e0       	ldi	r20, 0x02	; 2
+     812:	27 e0       	ldi	r18, 0x07	; 7
+     814:	14 d3       	rcall	.+1576   	; 0xe3e <Push_PS2_Byte>
+     816:	8a 85       	ldd	r24, Y+10	; 0x0a
+     818:	8f 83       	std	Y+7, r24	; 0x07
+     81a:	8b 85       	ldd	r24, Y+11	; 0x0b
+     81c:	8f 5f       	subi	r24, 0xFF	; 255
+     81e:	8b 87       	std	Y+11, r24	; 0x0b
+     820:	8b 85       	ldd	r24, Y+11	; 0x0b
+     822:	83 30       	cpi	r24, 0x03	; 3
+     824:	09 f5       	brne	.+66     	; 0x868 <main+0x1c6>
+     826:	1b 86       	std	Y+11, r1	; 0x0b
+     828:	1f c0       	rjmp	.+62     	; 0x868 <main+0x1c6>
+     82a:	2e df       	rcall	.-420    	; 0x688 <SetHostToDeviceDirection>
+     82c:	8b e2       	ldi	r24, 0x2B	; 43
+     82e:	90 e0       	ldi	r25, 0x00	; 0
+     830:	62 e0       	ldi	r22, 0x02	; 2
+     832:	47 e0       	ldi	r20, 0x07	; 7
+     834:	97 d3       	rcall	.+1838   	; 0xf64 <Write_Ps2_HOST_REQUEST>
+     836:	2d df       	rcall	.-422    	; 0x692 <WritingToDeviceDirection>
+     838:	0f 81       	ldd	r16, Y+7	; 0x07
+     83a:	89 e2       	ldi	r24, 0x29	; 41
+     83c:	90 e0       	ldi	r25, 0x00	; 0
+     83e:	6b e2       	ldi	r22, 0x2B	; 43
+     840:	70 e0       	ldi	r23, 0x00	; 0
+     842:	42 e0       	ldi	r20, 0x02	; 2
+     844:	27 e0       	ldi	r18, 0x07	; 7
+     846:	fb d2       	rcall	.+1526   	; 0xe3e <Push_PS2_Byte>
+     848:	0f c0       	rjmp	.+30     	; 0x868 <main+0x1c6>
+     84a:	8b 85       	ldd	r24, Y+11	; 0x0b
+     84c:	83 30       	cpi	r24, 0x03	; 3
+     84e:	61 f4       	brne	.+24     	; 0x868 <main+0x1c6>
+     850:	82 e0       	ldi	r24, 0x02	; 2
+     852:	8b 87       	std	Y+11, r24	; 0x0b
+     854:	09 c0       	rjmp	.+18     	; 0x868 <main+0x1c6>
+     856:	09 df       	rcall	.-494    	; 0x66a <SetDeviceToHostDirection>
+     858:	2a 81       	ldd	r18, Y+2	; 0x02
+     85a:	8b e2       	ldi	r24, 0x2B	; 43
+     85c:	90 e0       	ldi	r25, 0x00	; 0
+     85e:	65 e0       	ldi	r22, 0x05	; 5
+     860:	46 e0       	ldi	r20, 0x06	; 6
+     862:	65 d2       	rcall	.+1226   	; 0xd2e <Write_Ps2_Byte>
+     864:	8a 81       	ldd	r24, Y+2	; 0x02
+     866:	8e 83       	std	Y+6, r24	; 0x06
+     868:	0a df       	rcall	.-492    	; 0x67e <ListeningtDirection>
+     86a:	88 e2       	ldi	r24, 0x28	; 40
+     86c:	90 e0       	ldi	r25, 0x00	; 0
+     86e:	61 e0       	ldi	r22, 0x01	; 1
+     870:	41 e0       	ldi	r20, 0x01	; 1
+     872:	e1 de       	rcall	.-574    	; 0x636 <Set_Port_Bit>
+     874:	80 d5       	rcall	.+2816   	; 0x1376 <DataInReceiveBuffer>
+     876:	88 23       	and	r24, r24
+     878:	61 f0       	breq	.+24     	; 0x892 <main+0x1f0>
+     87a:	86 d5       	rcall	.+2828   	; 0x1388 <GetDataFromReceiveBuffer>
+     87c:	8a 83       	std	Y+2, r24	; 0x02
+     87e:	8a 81       	ldd	r24, Y+2	; 0x02
+     880:	b7 01       	movw	r22, r14
+     882:	92 d4       	rcall	.+2340   	; 0x11a8 <GetScanCode>
+     884:	8d 83       	std	Y+5, r24	; 0x05
+     886:	18 86       	std	Y+8, r1	; 0x08
+     888:	88 e2       	ldi	r24, 0x28	; 40
+     88a:	90 e0       	ldi	r25, 0x00	; 0
+     88c:	60 e0       	ldi	r22, 0x00	; 0
+     88e:	41 e0       	ldi	r20, 0x01	; 1
+     890:	d2 de       	rcall	.-604    	; 0x636 <Set_Port_Bit>
+     892:	98 85       	ldd	r25, Y+8	; 0x08
+     894:	8d 81       	ldd	r24, Y+5	; 0x05
+     896:	98 17       	cp	r25, r24
+     898:	08 f0       	brcs	.+2      	; 0x89c <main+0x1fa>
+     89a:	d5 c0       	rjmp	.+426    	; 0xa46 <main+0x3a4>
+     89c:	70 d4       	rcall	.+2272   	; 0x117e <IsDataInPs2HostBuffer>
+     89e:	88 23       	and	r24, r24
+     8a0:	09 f0       	breq	.+2      	; 0x8a4 <main+0x202>
+     8a2:	d1 c0       	rjmp	.+418    	; 0xa46 <main+0x3a4>
+     8a4:	8f e7       	ldi	r24, 0x7F	; 127
+     8a6:	98 e3       	ldi	r25, 0x38	; 56
+     8a8:	a1 e0       	ldi	r26, 0x01	; 1
+     8aa:	81 50       	subi	r24, 0x01	; 1
+     8ac:	90 40       	sbci	r25, 0x00	; 0
+     8ae:	a0 40       	sbci	r26, 0x00	; 0
+     8b0:	e1 f7       	brne	.-8      	; 0x8aa <main+0x208>
+     8b2:	00 c0       	rjmp	.+0      	; 0x8b4 <main+0x212>
+     8b4:	00 00       	nop
+     8b6:	d9 de       	rcall	.-590    	; 0x66a <SetDeviceToHostDirection>
+     8b8:	88 85       	ldd	r24, Y+8	; 0x08
+     8ba:	f7 01       	movw	r30, r14
+     8bc:	e8 0f       	add	r30, r24
+     8be:	f1 1d       	adc	r31, r1
+     8c0:	20 81       	ld	r18, Z
+     8c2:	8b e2       	ldi	r24, 0x2B	; 43
+     8c4:	90 e0       	ldi	r25, 0x00	; 0
+     8c6:	65 e0       	ldi	r22, 0x05	; 5
+     8c8:	46 e0       	ldi	r20, 0x06	; 6
+     8ca:	31 d2       	rcall	.+1122   	; 0xd2e <Write_Ps2_Byte>
+     8cc:	88 85       	ldd	r24, Y+8	; 0x08
+     8ce:	f7 01       	movw	r30, r14
+     8d0:	e8 0f       	add	r30, r24
+     8d2:	f1 1d       	adc	r31, r1
+     8d4:	80 81       	ld	r24, Z
+     8d6:	8e 83       	std	Y+6, r24	; 0x06
+     8d8:	88 85       	ldd	r24, Y+8	; 0x08
+     8da:	8f 5f       	subi	r24, 0xFF	; 255
+     8dc:	88 87       	std	Y+8, r24	; 0x08
+     8de:	cf de       	rcall	.-610    	; 0x67e <ListeningtDirection>
+     8e0:	b2 c0       	rjmp	.+356    	; 0xa46 <main+0x3a4>
+     8e2:	56 d4       	rcall	.+2220   	; 0x1190 <GetDataFromPs2HostBuffer>
+     8e4:	8b 83       	std	Y+3, r24	; 0x03
+     8e6:	c1 de       	rcall	.-638    	; 0x66a <SetDeviceToHostDirection>
+     8e8:	8b 81       	ldd	r24, Y+3	; 0x03
+     8ea:	87 ff       	sbrs	r24, 7
+     8ec:	67 c0       	rjmp	.+206    	; 0x9bc <main+0x31a>
+     8ee:	8b 81       	ldd	r24, Y+3	; 0x03
+     8f0:	90 e0       	ldi	r25, 0x00	; 0
+     8f2:	8d 5e       	subi	r24, 0xED	; 237
+     8f4:	90 40       	sbci	r25, 0x00	; 0
+     8f6:	82 31       	cpi	r24, 0x12	; 18
+     8f8:	91 05       	cpc	r25, r1
+     8fa:	08 f0       	brcs	.+2      	; 0x8fe <main+0x25c>
+     8fc:	9b c0       	rjmp	.+310    	; 0xa34 <main+0x392>
+     8fe:	86 5e       	subi	r24, 0xE6	; 230
+     900:	9f 4f       	sbci	r25, 0xFF	; 255
+     902:	8f 93       	push	r24
+     904:	9f 93       	push	r25
+     906:	08 95       	ret
+     908:	8f e7       	ldi	r24, 0x7F	; 127
+     90a:	98 e3       	ldi	r25, 0x38	; 56
+     90c:	a1 e0       	ldi	r26, 0x01	; 1
+     90e:	81 50       	subi	r24, 0x01	; 1
+     910:	90 40       	sbci	r25, 0x00	; 0
+     912:	a0 40       	sbci	r26, 0x00	; 0
+     914:	e1 f7       	brne	.-8      	; 0x90e <main+0x26c>
+     916:	00 c0       	rjmp	.+0      	; 0x918 <main+0x276>
+     918:	00 00       	nop
+     91a:	8b e2       	ldi	r24, 0x2B	; 43
+     91c:	90 e0       	ldi	r25, 0x00	; 0
+     91e:	65 e0       	ldi	r22, 0x05	; 5
+     920:	46 e0       	ldi	r20, 0x06	; 6
+     922:	2a ef       	ldi	r18, 0xFA	; 250
+     924:	04 d2       	rcall	.+1032   	; 0xd2e <Write_Ps2_Byte>
+     926:	8f e7       	ldi	r24, 0x7F	; 127
+     928:	98 e3       	ldi	r25, 0x38	; 56
+     92a:	a1 e0       	ldi	r26, 0x01	; 1
+     92c:	81 50       	subi	r24, 0x01	; 1
+     92e:	90 40       	sbci	r25, 0x00	; 0
+     930:	a0 40       	sbci	r26, 0x00	; 0
+     932:	e1 f7       	brne	.-8      	; 0x92c <main+0x28a>
+     934:	00 c0       	rjmp	.+0      	; 0x936 <main+0x294>
+     936:	00 00       	nop
+     938:	8b e2       	ldi	r24, 0x2B	; 43
+     93a:	90 e0       	ldi	r25, 0x00	; 0
+     93c:	65 e0       	ldi	r22, 0x05	; 5
+     93e:	46 e0       	ldi	r20, 0x06	; 6
+     940:	2b ea       	ldi	r18, 0xAB	; 171
+     942:	f5 d1       	rcall	.+1002   	; 0xd2e <Write_Ps2_Byte>
+     944:	8f e7       	ldi	r24, 0x7F	; 127
+     946:	98 e3       	ldi	r25, 0x38	; 56
+     948:	a1 e0       	ldi	r26, 0x01	; 1
+     94a:	81 50       	subi	r24, 0x01	; 1
+     94c:	90 40       	sbci	r25, 0x00	; 0
+     94e:	a0 40       	sbci	r26, 0x00	; 0
+     950:	e1 f7       	brne	.-8      	; 0x94a <main+0x2a8>
+     952:	00 c0       	rjmp	.+0      	; 0x954 <main+0x2b2>
+     954:	00 00       	nop
+     956:	8b e2       	ldi	r24, 0x2B	; 43
+     958:	90 e0       	ldi	r25, 0x00	; 0
+     95a:	65 e0       	ldi	r22, 0x05	; 5
+     95c:	46 e0       	ldi	r20, 0x06	; 6
+     95e:	23 e8       	ldi	r18, 0x83	; 131
+     960:	68 c0       	rjmp	.+208    	; 0xa32 <main+0x390>
+     962:	8f e7       	ldi	r24, 0x7F	; 127
+     964:	98 e3       	ldi	r25, 0x38	; 56
+     966:	a1 e0       	ldi	r26, 0x01	; 1
+     968:	81 50       	subi	r24, 0x01	; 1
+     96a:	90 40       	sbci	r25, 0x00	; 0
+     96c:	a0 40       	sbci	r26, 0x00	; 0
+     96e:	e1 f7       	brne	.-8      	; 0x968 <main+0x2c6>
+     970:	00 c0       	rjmp	.+0      	; 0x972 <main+0x2d0>
+     972:	00 00       	nop
+     974:	8b e2       	ldi	r24, 0x2B	; 43
+     976:	90 e0       	ldi	r25, 0x00	; 0
+     978:	65 e0       	ldi	r22, 0x05	; 5
+     97a:	46 e0       	ldi	r20, 0x06	; 6
+     97c:	2e ee       	ldi	r18, 0xEE	; 238
+     97e:	59 c0       	rjmp	.+178    	; 0xa32 <main+0x390>
+     980:	8f e7       	ldi	r24, 0x7F	; 127
+     982:	98 e3       	ldi	r25, 0x38	; 56
+     984:	a1 e0       	ldi	r26, 0x01	; 1
+     986:	81 50       	subi	r24, 0x01	; 1
+     988:	90 40       	sbci	r25, 0x00	; 0
+     98a:	a0 40       	sbci	r26, 0x00	; 0
+     98c:	e1 f7       	brne	.-8      	; 0x986 <main+0x2e4>
+     98e:	00 c0       	rjmp	.+0      	; 0x990 <main+0x2ee>
+     990:	00 00       	nop
+     992:	8b e2       	ldi	r24, 0x2B	; 43
+     994:	90 e0       	ldi	r25, 0x00	; 0
+     996:	65 e0       	ldi	r22, 0x05	; 5
+     998:	46 e0       	ldi	r20, 0x06	; 6
+     99a:	2a ef       	ldi	r18, 0xFA	; 250
+     99c:	4a c0       	rjmp	.+148    	; 0xa32 <main+0x390>
+     99e:	18 8b       	std	Y+16, r17	; 0x10
+     9a0:	49 c0       	rjmp	.+146    	; 0xa34 <main+0x392>
+     9a2:	19 8b       	std	Y+17, r17	; 0x11
+     9a4:	47 c0       	rjmp	.+142    	; 0xa34 <main+0x392>
+     9a6:	8f e7       	ldi	r24, 0x7F	; 127
+     9a8:	98 e3       	ldi	r25, 0x38	; 56
+     9aa:	a1 e0       	ldi	r26, 0x01	; 1
+     9ac:	81 50       	subi	r24, 0x01	; 1
+     9ae:	90 40       	sbci	r25, 0x00	; 0
+     9b0:	a0 40       	sbci	r26, 0x00	; 0
+     9b2:	e1 f7       	brne	.-8      	; 0x9ac <main+0x30a>
+     9b4:	00 c0       	rjmp	.+0      	; 0x9b6 <main+0x314>
+     9b6:	00 00       	nop
+     9b8:	2e 81       	ldd	r18, Y+6	; 0x06
+     9ba:	24 c0       	rjmp	.+72     	; 0xa04 <main+0x362>
+     9bc:	8c 81       	ldd	r24, Y+4	; 0x04
+     9be:	90 e0       	ldi	r25, 0x00	; 0
+     9c0:	8d 5e       	subi	r24, 0xED	; 237
+     9c2:	90 40       	sbci	r25, 0x00	; 0
+     9c4:	83 31       	cpi	r24, 0x13	; 19
+     9c6:	91 05       	cpc	r25, r1
+     9c8:	78 f5       	brcc	.+94     	; 0xa28 <main+0x386>
+     9ca:	84 5d       	subi	r24, 0xD4	; 212
+     9cc:	9f 4f       	sbci	r25, 0xFF	; 255
+     9ce:	8f 93       	push	r24
+     9d0:	9f 93       	push	r25
+     9d2:	08 95       	ret
+     9d4:	8b 81       	ldd	r24, Y+3	; 0x03
+     9d6:	8a 87       	std	Y+10, r24	; 0x0a
+     9d8:	1b 87       	std	Y+11, r17	; 0x0b
+     9da:	2c c0       	rjmp	.+88     	; 0xa34 <main+0x392>
+     9dc:	8b 81       	ldd	r24, Y+3	; 0x03
+     9de:	90 e0       	ldi	r25, 0x00	; 0
+     9e0:	83 70       	andi	r24, 0x03	; 3
+     9e2:	90 70       	andi	r25, 0x00	; 0
+     9e4:	00 97       	sbiw	r24, 0x00	; 0
+     9e6:	21 f0       	breq	.+8      	; 0x9f0 <main+0x34e>
+     9e8:	8b 81       	ldd	r24, Y+3	; 0x03
+     9ea:	8c 87       	std	Y+12, r24	; 0x0c
+     9ec:	1d 87       	std	Y+13, r17	; 0x0d
+     9ee:	22 c0       	rjmp	.+68     	; 0xa34 <main+0x392>
+     9f0:	8f e7       	ldi	r24, 0x7F	; 127
+     9f2:	98 e3       	ldi	r25, 0x38	; 56
+     9f4:	a1 e0       	ldi	r26, 0x01	; 1
+     9f6:	81 50       	subi	r24, 0x01	; 1
+     9f8:	90 40       	sbci	r25, 0x00	; 0
+     9fa:	a0 40       	sbci	r26, 0x00	; 0
+     9fc:	e1 f7       	brne	.-8      	; 0x9f6 <main+0x354>
+     9fe:	00 c0       	rjmp	.+0      	; 0xa00 <main+0x35e>
+     a00:	00 00       	nop
+     a02:	2c 85       	ldd	r18, Y+12	; 0x0c
+     a04:	8b e2       	ldi	r24, 0x2B	; 43
+     a06:	90 e0       	ldi	r25, 0x00	; 0
+     a08:	65 e0       	ldi	r22, 0x05	; 5
+     a0a:	46 e0       	ldi	r20, 0x06	; 6
+     a0c:	12 c0       	rjmp	.+36     	; 0xa32 <main+0x390>
+     a0e:	8b 81       	ldd	r24, Y+3	; 0x03
+     a10:	8e 87       	std	Y+14, r24	; 0x0e
+     a12:	1f 87       	std	Y+15, r17	; 0x0f
+     a14:	0f c0       	rjmp	.+30     	; 0xa34 <main+0x392>
+     a16:	8f e7       	ldi	r24, 0x7F	; 127
+     a18:	98 e3       	ldi	r25, 0x38	; 56
+     a1a:	a1 e0       	ldi	r26, 0x01	; 1
+     a1c:	81 50       	subi	r24, 0x01	; 1
+     a1e:	90 40       	sbci	r25, 0x00	; 0
+     a20:	a0 40       	sbci	r26, 0x00	; 0
+     a22:	e1 f7       	brne	.-8      	; 0xa1c <main+0x37a>
+     a24:	00 c0       	rjmp	.+0      	; 0xa26 <main+0x384>
+     a26:	00 00       	nop
+     a28:	8b e2       	ldi	r24, 0x2B	; 43
+     a2a:	90 e0       	ldi	r25, 0x00	; 0
+     a2c:	65 e0       	ldi	r22, 0x05	; 5
+     a2e:	46 e0       	ldi	r20, 0x06	; 6
+     a30:	2f ef       	ldi	r18, 0xFF	; 255
+     a32:	7d d1       	rcall	.+762    	; 0xd2e <Write_Ps2_Byte>
+     a34:	24 de       	rcall	.-952    	; 0x67e <ListeningtDirection>
+     a36:	8b 81       	ldd	r24, Y+3	; 0x03
+     a38:	8c 83       	std	Y+4, r24	; 0x04
+     a3a:	88 e2       	ldi	r24, 0x28	; 40
+     a3c:	90 e0       	ldi	r25, 0x00	; 0
+     a3e:	62 e0       	ldi	r22, 0x02	; 2
+     a40:	40 e0       	ldi	r20, 0x00	; 0
+     a42:	f9 dd       	rcall	.-1038   	; 0x636 <Set_Port_Bit>
+     a44:	01 c0       	rjmp	.+2      	; 0xa48 <main+0x3a6>
+     a46:	11 e0       	ldi	r17, 0x01	; 1
+     a48:	9a d3       	rcall	.+1844   	; 0x117e <IsDataInPs2HostBuffer>
+     a4a:	88 23       	and	r24, r24
+     a4c:	09 f0       	breq	.+2      	; 0xa50 <main+0x3ae>
+     a4e:	49 cf       	rjmp	.-366    	; 0x8e2 <main+0x240>
+     a50:	9a ce       	rjmp	.-716    	; 0x786 <main+0xe4>
+
+00000a52 <Sniffer_PS2_Byte>:
+     a52:	af 92       	push	r10
+     a54:	bf 92       	push	r11
+     a56:	cf 92       	push	r12
+     a58:	df 92       	push	r13
+     a5a:	ef 92       	push	r14
+     a5c:	ff 92       	push	r15
+     a5e:	0f 93       	push	r16
+     a60:	1f 93       	push	r17
+     a62:	df 93       	push	r29
+     a64:	cf 93       	push	r28
+     a66:	cd b7       	in	r28, 0x3d	; 61
+     a68:	de b7       	in	r29, 0x3e	; 62
+     a6a:	62 97       	sbiw	r28, 0x12	; 18
+     a6c:	0f b6       	in	r0, 0x3f	; 63
+     a6e:	f8 94       	cli
+     a70:	de bf       	out	0x3e, r29	; 62
+     a72:	0f be       	out	0x3f, r0	; 63
+     a74:	cd bf       	out	0x3d, r28	; 61
+     a76:	6c 01       	movw	r12, r24
+     a78:	b6 2e       	mov	r11, r22
+     a7a:	a4 2e       	mov	r10, r20
+     a7c:	79 01       	movw	r14, r18
+     a7e:	19 82       	std	Y+1, r1	; 0x01
+     a80:	1a 82       	std	Y+2, r1	; 0x02
+     a82:	1b 82       	std	Y+3, r1	; 0x03
+     a84:	1c 82       	std	Y+4, r1	; 0x04
+     a86:	1d 82       	std	Y+5, r1	; 0x05
+     a88:	8e 01       	movw	r16, r28
+     a8a:	07 5f       	subi	r16, 0xF7	; 247
+     a8c:	1f 4f       	sbci	r17, 0xFF	; 255
+     a8e:	c8 01       	movw	r24, r16
+     a90:	60 e0       	ldi	r22, 0x00	; 0
+     a92:	70 e0       	ldi	r23, 0x00	; 0
+     a94:	4a e0       	ldi	r20, 0x0A	; 10
+     a96:	50 e0       	ldi	r21, 0x00	; 0
+     a98:	ae d4       	rcall	.+2396   	; 0x13f6 <memset>
+     a9a:	1e 82       	std	Y+6, r1	; 0x06
+     a9c:	1f 82       	std	Y+7, r1	; 0x07
+     a9e:	18 86       	std	Y+8, r1	; 0x08
+     aa0:	1c 82       	std	Y+4, r1	; 0x04
+     aa2:	21 e0       	ldi	r18, 0x01	; 1
+     aa4:	31 c0       	rjmp	.+98     	; 0xb08 <Sniffer_PS2_Byte+0xb6>
+     aa6:	1d 82       	std	Y+5, r1	; 0x05
+     aa8:	19 82       	std	Y+1, r1	; 0x01
+     aaa:	28 c0       	rjmp	.+80     	; 0xafc <Sniffer_PS2_Byte+0xaa>
+     aac:	f6 01       	movw	r30, r12
+     aae:	80 81       	ld	r24, Z
+     ab0:	8f 83       	std	Y+7, r24	; 0x07
+     ab2:	8f 81       	ldd	r24, Y+7	; 0x07
+     ab4:	90 e0       	ldi	r25, 0x00	; 0
+     ab6:	0b 2c       	mov	r0, r11
+     ab8:	02 c0       	rjmp	.+4      	; 0xabe <Sniffer_PS2_Byte+0x6c>
+     aba:	95 95       	asr	r25
+     abc:	87 95       	ror	r24
+     abe:	0a 94       	dec	r0
+     ac0:	e2 f7       	brpl	.-8      	; 0xaba <Sniffer_PS2_Byte+0x68>
+     ac2:	81 70       	andi	r24, 0x01	; 1
+     ac4:	8a 83       	std	Y+2, r24	; 0x02
+     ac6:	8f 81       	ldd	r24, Y+7	; 0x07
+     ac8:	90 e0       	ldi	r25, 0x00	; 0
+     aca:	0a 2c       	mov	r0, r10
+     acc:	02 c0       	rjmp	.+4      	; 0xad2 <Sniffer_PS2_Byte+0x80>
+     ace:	95 95       	asr	r25
+     ad0:	87 95       	ror	r24
+     ad2:	0a 94       	dec	r0
+     ad4:	e2 f7       	brpl	.-8      	; 0xace <Sniffer_PS2_Byte+0x7c>
+     ad6:	81 70       	andi	r24, 0x01	; 1
+     ad8:	8b 83       	std	Y+3, r24	; 0x03
+     ada:	8a 81       	ldd	r24, Y+2	; 0x02
+     adc:	81 30       	cpi	r24, 0x01	; 1
+     ade:	21 f4       	brne	.+8      	; 0xae8 <Sniffer_PS2_Byte+0x96>
+     ae0:	8d 81       	ldd	r24, Y+5	; 0x05
+     ae2:	88 23       	and	r24, r24
+     ae4:	41 f0       	breq	.+16     	; 0xaf6 <Sniffer_PS2_Byte+0xa4>
+     ae6:	0d c0       	rjmp	.+26     	; 0xb02 <Sniffer_PS2_Byte+0xb0>
+     ae8:	2d 83       	std	Y+5, r18	; 0x05
+     aea:	9c 81       	ldd	r25, Y+4	; 0x04
+     aec:	8b 81       	ldd	r24, Y+3	; 0x03
+     aee:	f8 01       	movw	r30, r16
+     af0:	e9 0f       	add	r30, r25
+     af2:	f1 1d       	adc	r31, r1
+     af4:	80 83       	st	Z, r24
+     af6:	89 81       	ldd	r24, Y+1	; 0x01
+     af8:	8f 5f       	subi	r24, 0xFF	; 255
+     afa:	89 83       	std	Y+1, r24	; 0x01
+     afc:	89 81       	ldd	r24, Y+1	; 0x01
+     afe:	88 32       	cpi	r24, 0x28	; 40
+     b00:	a8 f2       	brcs	.-86     	; 0xaac <Sniffer_PS2_Byte+0x5a>
+     b02:	8c 81       	ldd	r24, Y+4	; 0x04
+     b04:	8f 5f       	subi	r24, 0xFF	; 255
+     b06:	8c 83       	std	Y+4, r24	; 0x04
+     b08:	8c 81       	ldd	r24, Y+4	; 0x04
+     b0a:	8a 30       	cpi	r24, 0x0A	; 10
+     b0c:	60 f2       	brcs	.-104    	; 0xaa6 <Sniffer_PS2_Byte+0x54>
+     b0e:	81 e0       	ldi	r24, 0x01	; 1
+     b10:	8e 83       	std	Y+6, r24	; 0x06
+     b12:	1c 82       	std	Y+4, r1	; 0x04
+     b14:	ce 01       	movw	r24, r28
+     b16:	09 96       	adiw	r24, 0x09	; 9
+     b18:	0f c0       	rjmp	.+30     	; 0xb38 <Sniffer_PS2_Byte+0xe6>
+     b1a:	2c 81       	ldd	r18, Y+4	; 0x04
+     b1c:	fc 01       	movw	r30, r24
+     b1e:	e2 0f       	add	r30, r18
+     b20:	f1 1d       	adc	r31, r1
+     b22:	20 81       	ld	r18, Z
+     b24:	22 23       	and	r18, r18
+     b26:	29 f0       	breq	.+10     	; 0xb32 <Sniffer_PS2_Byte+0xe0>
+     b28:	3e 81       	ldd	r19, Y+6	; 0x06
+     b2a:	21 e0       	ldi	r18, 0x01	; 1
+     b2c:	31 11       	cpse	r19, r1
+     b2e:	20 e0       	ldi	r18, 0x00	; 0
+     b30:	2e 83       	std	Y+6, r18	; 0x06
+     b32:	2c 81       	ldd	r18, Y+4	; 0x04
+     b34:	2f 5f       	subi	r18, 0xFF	; 255
+     b36:	2c 83       	std	Y+4, r18	; 0x04
+     b38:	2c 81       	ldd	r18, Y+4	; 0x04
+     b3a:	2a 30       	cpi	r18, 0x0A	; 10
+     b3c:	70 f3       	brcs	.-36     	; 0xb1a <Sniffer_PS2_Byte+0xc8>
+     b3e:	1c 82       	std	Y+4, r1	; 0x04
+     b40:	9e 01       	movw	r18, r28
+     b42:	27 5f       	subi	r18, 0xF7	; 247
+     b44:	3f 4f       	sbci	r19, 0xFF	; 255
+     b46:	81 e0       	ldi	r24, 0x01	; 1
+     b48:	90 e0       	ldi	r25, 0x00	; 0
+     b4a:	15 c0       	rjmp	.+42     	; 0xb76 <Sniffer_PS2_Byte+0x124>
+     b4c:	ec 81       	ldd	r30, Y+4	; 0x04
+     b4e:	f0 e0       	ldi	r31, 0x00	; 0
+     b50:	31 96       	adiw	r30, 0x01	; 1
+     b52:	e2 0f       	add	r30, r18
+     b54:	f3 1f       	adc	r31, r19
+     b56:	40 81       	ld	r20, Z
+     b58:	44 23       	and	r20, r20
+     b5a:	51 f0       	breq	.+20     	; 0xb70 <Sniffer_PS2_Byte+0x11e>
+     b5c:	68 85       	ldd	r22, Y+8	; 0x08
+     b5e:	4c 81       	ldd	r20, Y+4	; 0x04
+     b60:	fc 01       	movw	r30, r24
+     b62:	02 c0       	rjmp	.+4      	; 0xb68 <Sniffer_PS2_Byte+0x116>
+     b64:	ee 0f       	add	r30, r30
+     b66:	ff 1f       	adc	r31, r31
+     b68:	4a 95       	dec	r20
+     b6a:	e2 f7       	brpl	.-8      	; 0xb64 <Sniffer_PS2_Byte+0x112>
+     b6c:	6e 2b       	or	r22, r30
+     b6e:	68 87       	std	Y+8, r22	; 0x08
+     b70:	4c 81       	ldd	r20, Y+4	; 0x04
+     b72:	4f 5f       	subi	r20, 0xFF	; 255
+     b74:	4c 83       	std	Y+4, r20	; 0x04
+     b76:	4c 81       	ldd	r20, Y+4	; 0x04
+     b78:	48 30       	cpi	r20, 0x08	; 8
+     b7a:	40 f3       	brcs	.-48     	; 0xb4c <Sniffer_PS2_Byte+0xfa>
+     b7c:	88 85       	ldd	r24, Y+8	; 0x08
+     b7e:	f7 01       	movw	r30, r14
+     b80:	80 83       	st	Z, r24
+     b82:	8e 81       	ldd	r24, Y+6	; 0x06
+     b84:	62 96       	adiw	r28, 0x12	; 18
+     b86:	0f b6       	in	r0, 0x3f	; 63
+     b88:	f8 94       	cli
+     b8a:	de bf       	out	0x3e, r29	; 62
+     b8c:	0f be       	out	0x3f, r0	; 63
+     b8e:	cd bf       	out	0x3d, r28	; 61
+     b90:	cf 91       	pop	r28
+     b92:	df 91       	pop	r29
+     b94:	1f 91       	pop	r17
+     b96:	0f 91       	pop	r16
+     b98:	ff 90       	pop	r15
+     b9a:	ef 90       	pop	r14
+     b9c:	df 90       	pop	r13
+     b9e:	cf 90       	pop	r12
+     ba0:	bf 90       	pop	r11
+     ba2:	af 90       	pop	r10
+     ba4:	08 95       	ret
+
+00000ba6 <Read_Ps2_Byte>:
+     ba6:	6f 92       	push	r6
+     ba8:	7f 92       	push	r7
+     baa:	8f 92       	push	r8
+     bac:	9f 92       	push	r9
+     bae:	af 92       	push	r10
+     bb0:	bf 92       	push	r11
+     bb2:	cf 92       	push	r12
+     bb4:	df 92       	push	r13
+     bb6:	ef 92       	push	r14
+     bb8:	ff 92       	push	r15
+     bba:	0f 93       	push	r16
+     bbc:	1f 93       	push	r17
+     bbe:	df 93       	push	r29
+     bc0:	cf 93       	push	r28
+     bc2:	cd b7       	in	r28, 0x3d	; 61
+     bc4:	de b7       	in	r29, 0x3e	; 62
+     bc6:	2f 97       	sbiw	r28, 0x0f	; 15
+     bc8:	0f b6       	in	r0, 0x3f	; 63
+     bca:	f8 94       	cli
+     bcc:	de bf       	out	0x3e, r29	; 62
+     bce:	0f be       	out	0x3f, r0	; 63
+     bd0:	cd bf       	out	0x3d, r28	; 61
+     bd2:	3c 01       	movw	r6, r24
+     bd4:	6b 01       	movw	r12, r22
+     bd6:	b4 2e       	mov	r11, r20
+     bd8:	a2 2e       	mov	r10, r18
+     bda:	48 01       	movw	r8, r16
+     bdc:	19 82       	std	Y+1, r1	; 0x01
+     bde:	1a 82       	std	Y+2, r1	; 0x02
+     be0:	8e 01       	movw	r16, r28
+     be2:	0b 5f       	subi	r16, 0xFB	; 251
+     be4:	1f 4f       	sbci	r17, 0xFF	; 255
+     be6:	c8 01       	movw	r24, r16
+     be8:	60 e0       	ldi	r22, 0x00	; 0
+     bea:	70 e0       	ldi	r23, 0x00	; 0
+     bec:	4b e0       	ldi	r20, 0x0B	; 11
+     bee:	50 e0       	ldi	r21, 0x00	; 0
+     bf0:	02 d4       	rcall	.+2052   	; 0x13f6 <memset>
+     bf2:	1b 82       	std	Y+3, r1	; 0x03
+     bf4:	1c 82       	std	Y+4, r1	; 0x04
+     bf6:	81 e0       	ldi	r24, 0x01	; 1
+     bf8:	8b 83       	std	Y+3, r24	; 0x03
+     bfa:	1a 82       	std	Y+2, r1	; 0x02
+     bfc:	78 01       	movw	r14, r16
+     bfe:	01 e0       	ldi	r16, 0x01	; 1
+     c00:	10 e0       	ldi	r17, 0x00	; 0
+     c02:	3e c0       	rjmp	.+124    	; 0xc80 <Read_Ps2_Byte+0xda>
+     c04:	f3 01       	movw	r30, r6
+     c06:	80 81       	ld	r24, Z
+     c08:	90 e0       	ldi	r25, 0x00	; 0
+     c0a:	0a 2c       	mov	r0, r10
+     c0c:	02 c0       	rjmp	.+4      	; 0xc12 <Read_Ps2_Byte+0x6c>
+     c0e:	95 95       	asr	r25
+     c10:	87 95       	ror	r24
+     c12:	0a 94       	dec	r0
+     c14:	e2 f7       	brpl	.-8      	; 0xc0e <Read_Ps2_Byte+0x68>
+     c16:	81 70       	andi	r24, 0x01	; 1
+     c18:	89 83       	std	Y+1, r24	; 0x01
+     c1a:	9a 81       	ldd	r25, Y+2	; 0x02
+     c1c:	89 81       	ldd	r24, Y+1	; 0x01
+     c1e:	f7 01       	movw	r30, r14
+     c20:	e9 0f       	add	r30, r25
+     c22:	f1 1d       	adc	r31, r1
+     c24:	80 83       	st	Z, r24
+     c26:	89 81       	ldd	r24, Y+1	; 0x01
+     c28:	88 23       	and	r24, r24
+     c2a:	b9 f0       	breq	.+46     	; 0xc5a <Read_Ps2_Byte+0xb4>
+     c2c:	9b 81       	ldd	r25, Y+3	; 0x03
+     c2e:	81 e0       	ldi	r24, 0x01	; 1
+     c30:	91 11       	cpse	r25, r1
+     c32:	80 e0       	ldi	r24, 0x00	; 0
+     c34:	8b 83       	std	Y+3, r24	; 0x03
+     c36:	8a 81       	ldd	r24, Y+2	; 0x02
+     c38:	88 23       	and	r24, r24
+     c3a:	79 f0       	breq	.+30     	; 0xc5a <Read_Ps2_Byte+0xb4>
+     c3c:	8a 81       	ldd	r24, Y+2	; 0x02
+     c3e:	89 30       	cpi	r24, 0x09	; 9
+     c40:	60 f4       	brcc	.+24     	; 0xc5a <Read_Ps2_Byte+0xb4>
+     c42:	2c 81       	ldd	r18, Y+4	; 0x04
+     c44:	8a 81       	ldd	r24, Y+2	; 0x02
+     c46:	90 e0       	ldi	r25, 0x00	; 0
+     c48:	01 97       	sbiw	r24, 0x01	; 1
+     c4a:	a8 01       	movw	r20, r16
+     c4c:	02 c0       	rjmp	.+4      	; 0xc52 <Read_Ps2_Byte+0xac>
+     c4e:	44 0f       	add	r20, r20
+     c50:	55 1f       	adc	r21, r21
+     c52:	8a 95       	dec	r24
+     c54:	e2 f7       	brpl	.-8      	; 0xc4e <Read_Ps2_Byte+0xa8>
+     c56:	24 2b       	or	r18, r20
+     c58:	2c 83       	std	Y+4, r18	; 0x04
+     c5a:	c6 01       	movw	r24, r12
+     c5c:	6b 2d       	mov	r22, r11
+     c5e:	41 e0       	ldi	r20, 0x01	; 1
+     c60:	ea dc       	rcall	.-1580   	; 0x636 <Set_Port_Bit>
+     c62:	5a e1       	ldi	r21, 0x1A	; 26
+     c64:	5a 95       	dec	r21
+     c66:	f1 f7       	brne	.-4      	; 0xc64 <Read_Ps2_Byte+0xbe>
+     c68:	00 c0       	rjmp	.+0      	; 0xc6a <Read_Ps2_Byte+0xc4>
+     c6a:	c6 01       	movw	r24, r12
+     c6c:	6b 2d       	mov	r22, r11
+     c6e:	40 e0       	ldi	r20, 0x00	; 0
+     c70:	e2 dc       	rcall	.-1596   	; 0x636 <Set_Port_Bit>
+     c72:	8a e1       	ldi	r24, 0x1A	; 26
+     c74:	8a 95       	dec	r24
+     c76:	f1 f7       	brne	.-4      	; 0xc74 <Read_Ps2_Byte+0xce>
+     c78:	00 c0       	rjmp	.+0      	; 0xc7a <Read_Ps2_Byte+0xd4>
+     c7a:	8a 81       	ldd	r24, Y+2	; 0x02
+     c7c:	8f 5f       	subi	r24, 0xFF	; 255
+     c7e:	8a 83       	std	Y+2, r24	; 0x02
+     c80:	8a 81       	ldd	r24, Y+2	; 0x02
+     c82:	8a 30       	cpi	r24, 0x0A	; 10
+     c84:	08 f4       	brcc	.+2      	; 0xc88 <Read_Ps2_Byte+0xe2>
+     c86:	be cf       	rjmp	.-132    	; 0xc04 <Read_Ps2_Byte+0x5e>
+     c88:	8c 81       	ldd	r24, Y+4	; 0x04
+     c8a:	f4 01       	movw	r30, r8
+     c8c:	80 83       	st	Z, r24
+     c8e:	8b 81       	ldd	r24, Y+3	; 0x03
+     c90:	2f 96       	adiw	r28, 0x0f	; 15
+     c92:	0f b6       	in	r0, 0x3f	; 63
+     c94:	f8 94       	cli
+     c96:	de bf       	out	0x3e, r29	; 62
+     c98:	0f be       	out	0x3f, r0	; 63
+     c9a:	cd bf       	out	0x3d, r28	; 61
+     c9c:	cf 91       	pop	r28
+     c9e:	df 91       	pop	r29
+     ca0:	1f 91       	pop	r17
+     ca2:	0f 91       	pop	r16
+     ca4:	ff 90       	pop	r15
+     ca6:	ef 90       	pop	r14
+     ca8:	df 90       	pop	r13
+     caa:	cf 90       	pop	r12
+     cac:	bf 90       	pop	r11
+     cae:	af 90       	pop	r10
+     cb0:	9f 90       	pop	r9
+     cb2:	8f 90       	pop	r8
+     cb4:	7f 90       	pop	r7
+     cb6:	6f 90       	pop	r6
+     cb8:	08 95       	ret
+
+00000cba <Write_Ps2_ACK>:
+     cba:	0f 93       	push	r16
+     cbc:	1f 93       	push	r17
+     cbe:	cf 93       	push	r28
+     cc0:	df 93       	push	r29
+     cc2:	ec 01       	movw	r28, r24
+     cc4:	16 2f       	mov	r17, r22
+     cc6:	04 2f       	mov	r16, r20
+     cc8:	41 e0       	ldi	r20, 0x01	; 1
+     cca:	b5 dc       	rcall	.-1686   	; 0x636 <Set_Port_Bit>
+     ccc:	ce 01       	movw	r24, r28
+     cce:	60 2f       	mov	r22, r16
+     cd0:	41 e0       	ldi	r20, 0x01	; 1
+     cd2:	b1 dc       	rcall	.-1694   	; 0x636 <Set_Port_Bit>
+     cd4:	8a e1       	ldi	r24, 0x1A	; 26
+     cd6:	8a 95       	dec	r24
+     cd8:	f1 f7       	brne	.-4      	; 0xcd6 <Write_Ps2_ACK+0x1c>
+     cda:	00 c0       	rjmp	.+0      	; 0xcdc <Write_Ps2_ACK+0x22>
+     cdc:	ce 01       	movw	r24, r28
+     cde:	61 2f       	mov	r22, r17
+     ce0:	40 e0       	ldi	r20, 0x00	; 0
+     ce2:	a9 dc       	rcall	.-1710   	; 0x636 <Set_Port_Bit>
+     ce4:	8a e1       	ldi	r24, 0x1A	; 26
+     ce6:	8a 95       	dec	r24
+     ce8:	f1 f7       	brne	.-4      	; 0xce6 <Write_Ps2_ACK+0x2c>
+     cea:	00 c0       	rjmp	.+0      	; 0xcec <Write_Ps2_ACK+0x32>
+     cec:	ce 01       	movw	r24, r28
+     cee:	61 2f       	mov	r22, r17
+     cf0:	41 e0       	ldi	r20, 0x01	; 1
+     cf2:	a1 dc       	rcall	.-1726   	; 0x636 <Set_Port_Bit>
+     cf4:	ce 01       	movw	r24, r28
+     cf6:	60 2f       	mov	r22, r16
+     cf8:	40 e0       	ldi	r20, 0x00	; 0
+     cfa:	9d dc       	rcall	.-1734   	; 0x636 <Set_Port_Bit>
+     cfc:	8a e1       	ldi	r24, 0x1A	; 26
+     cfe:	8a 95       	dec	r24
+     d00:	f1 f7       	brne	.-4      	; 0xcfe <Write_Ps2_ACK+0x44>
+     d02:	00 c0       	rjmp	.+0      	; 0xd04 <Write_Ps2_ACK+0x4a>
+     d04:	ce 01       	movw	r24, r28
+     d06:	61 2f       	mov	r22, r17
+     d08:	40 e0       	ldi	r20, 0x00	; 0
+     d0a:	95 dc       	rcall	.-1750   	; 0x636 <Set_Port_Bit>
+     d0c:	8a e1       	ldi	r24, 0x1A	; 26
+     d0e:	8a 95       	dec	r24
+     d10:	f1 f7       	brne	.-4      	; 0xd0e <Write_Ps2_ACK+0x54>
+     d12:	00 c0       	rjmp	.+0      	; 0xd14 <Write_Ps2_ACK+0x5a>
+     d14:	ce 01       	movw	r24, r28
+     d16:	61 2f       	mov	r22, r17
+     d18:	41 e0       	ldi	r20, 0x01	; 1
+     d1a:	8d dc       	rcall	.-1766   	; 0x636 <Set_Port_Bit>
+     d1c:	ce 01       	movw	r24, r28
+     d1e:	60 2f       	mov	r22, r16
+     d20:	41 e0       	ldi	r20, 0x01	; 1
+     d22:	89 dc       	rcall	.-1774   	; 0x636 <Set_Port_Bit>
+     d24:	df 91       	pop	r29
+     d26:	cf 91       	pop	r28
+     d28:	1f 91       	pop	r17
+     d2a:	0f 91       	pop	r16
+     d2c:	08 95       	ret
+
+00000d2e <Write_Ps2_Byte>:
+     d2e:	cf 92       	push	r12
+     d30:	df 92       	push	r13
+     d32:	ef 92       	push	r14
+     d34:	ff 92       	push	r15
+     d36:	0f 93       	push	r16
+     d38:	1f 93       	push	r17
+     d3a:	df 93       	push	r29
+     d3c:	cf 93       	push	r28
+     d3e:	cd b7       	in	r28, 0x3d	; 61
+     d40:	de b7       	in	r29, 0x3e	; 62
+     d42:	60 97       	sbiw	r28, 0x10	; 16
+     d44:	0f b6       	in	r0, 0x3f	; 63
+     d46:	f8 94       	cli
+     d48:	de bf       	out	0x3e, r29	; 62
+     d4a:	0f be       	out	0x3f, r0	; 63
+     d4c:	cd bf       	out	0x3d, r28	; 61
+     d4e:	8c 01       	movw	r16, r24
+     d50:	d6 2e       	mov	r13, r22
+     d52:	c4 2e       	mov	r12, r20
+     d54:	19 82       	std	Y+1, r1	; 0x01
+     d56:	1a 82       	std	Y+2, r1	; 0x02
+     d58:	95 e0       	ldi	r25, 0x05	; 5
+     d5a:	e9 2e       	mov	r14, r25
+     d5c:	f1 2c       	mov	r15, r1
+     d5e:	ec 0e       	add	r14, r28
+     d60:	fd 1e       	adc	r15, r29
+     d62:	c7 01       	movw	r24, r14
+     d64:	60 e0       	ldi	r22, 0x00	; 0
+     d66:	70 e0       	ldi	r23, 0x00	; 0
+     d68:	4b e0       	ldi	r20, 0x0B	; 11
+     d6a:	50 e0       	ldi	r21, 0x00	; 0
+     d6c:	28 8b       	std	Y+16, r18	; 0x10
+     d6e:	43 d3       	rcall	.+1670   	; 0x13f6 <memset>
+     d70:	1b 82       	std	Y+3, r1	; 0x03
+     d72:	1c 82       	std	Y+4, r1	; 0x04
+     d74:	81 e0       	ldi	r24, 0x01	; 1
+     d76:	8b 83       	std	Y+3, r24	; 0x03
+     d78:	19 82       	std	Y+1, r1	; 0x01
+     d7a:	28 89       	ldd	r18, Y+16	; 0x10
+     d7c:	30 e0       	ldi	r19, 0x00	; 0
+     d7e:	1c c0       	rjmp	.+56     	; 0xdb8 <Write_Ps2_Byte+0x8a>
+     d80:	89 81       	ldd	r24, Y+1	; 0x01
+     d82:	a9 01       	movw	r20, r18
+     d84:	02 c0       	rjmp	.+4      	; 0xd8a <Write_Ps2_Byte+0x5c>
+     d86:	55 95       	asr	r21
+     d88:	47 95       	ror	r20
+     d8a:	8a 95       	dec	r24
+     d8c:	e2 f7       	brpl	.-8      	; 0xd86 <Write_Ps2_Byte+0x58>
+     d8e:	ca 01       	movw	r24, r20
+     d90:	81 70       	andi	r24, 0x01	; 1
+     d92:	8c 83       	std	Y+4, r24	; 0x04
+     d94:	8c 81       	ldd	r24, Y+4	; 0x04
+     d96:	88 23       	and	r24, r24
+     d98:	29 f0       	breq	.+10     	; 0xda4 <Write_Ps2_Byte+0x76>
+     d9a:	9b 81       	ldd	r25, Y+3	; 0x03
+     d9c:	81 e0       	ldi	r24, 0x01	; 1
+     d9e:	91 11       	cpse	r25, r1
+     da0:	80 e0       	ldi	r24, 0x00	; 0
+     da2:	8b 83       	std	Y+3, r24	; 0x03
+     da4:	e9 81       	ldd	r30, Y+1	; 0x01
+     da6:	f0 e0       	ldi	r31, 0x00	; 0
+     da8:	31 96       	adiw	r30, 0x01	; 1
+     daa:	8c 81       	ldd	r24, Y+4	; 0x04
+     dac:	ee 0d       	add	r30, r14
+     dae:	ff 1d       	adc	r31, r15
+     db0:	80 83       	st	Z, r24
+     db2:	89 81       	ldd	r24, Y+1	; 0x01
+     db4:	8f 5f       	subi	r24, 0xFF	; 255
+     db6:	89 83       	std	Y+1, r24	; 0x01
+     db8:	89 81       	ldd	r24, Y+1	; 0x01
+     dba:	88 30       	cpi	r24, 0x08	; 8
+     dbc:	08 f3       	brcs	.-62     	; 0xd80 <Write_Ps2_Byte+0x52>
+     dbe:	1d 82       	std	Y+5, r1	; 0x05
+     dc0:	8b 81       	ldd	r24, Y+3	; 0x03
+     dc2:	8e 87       	std	Y+14, r24	; 0x0e
+     dc4:	81 e0       	ldi	r24, 0x01	; 1
+     dc6:	8f 87       	std	Y+15, r24	; 0x0f
+     dc8:	1a 82       	std	Y+2, r1	; 0x02
+     dca:	85 e0       	ldi	r24, 0x05	; 5
+     dcc:	e8 2e       	mov	r14, r24
+     dce:	f1 2c       	mov	r15, r1
+     dd0:	ec 0e       	add	r14, r28
+     dd2:	fd 1e       	adc	r15, r29
+     dd4:	22 c0       	rjmp	.+68     	; 0xe1a <Write_Ps2_Byte+0xec>
+     dd6:	8a 81       	ldd	r24, Y+2	; 0x02
+     dd8:	88 23       	and	r24, r24
+     dda:	21 f0       	breq	.+8      	; 0xde4 <Write_Ps2_Byte+0xb6>
+     ddc:	5d e0       	ldi	r21, 0x0D	; 13
+     dde:	5a 95       	dec	r21
+     de0:	f1 f7       	brne	.-4      	; 0xdde <Write_Ps2_Byte+0xb0>
+     de2:	00 00       	nop
+     de4:	8a 81       	ldd	r24, Y+2	; 0x02
+     de6:	f7 01       	movw	r30, r14
+     de8:	e8 0f       	add	r30, r24
+     dea:	f1 1d       	adc	r31, r1
+     dec:	40 81       	ld	r20, Z
+     dee:	c8 01       	movw	r24, r16
+     df0:	6c 2d       	mov	r22, r12
+     df2:	21 dc       	rcall	.-1982   	; 0x636 <Set_Port_Bit>
+     df4:	8d e0       	ldi	r24, 0x0D	; 13
+     df6:	8a 95       	dec	r24
+     df8:	f1 f7       	brne	.-4      	; 0xdf6 <Write_Ps2_Byte+0xc8>
+     dfa:	00 00       	nop
+     dfc:	c8 01       	movw	r24, r16
+     dfe:	6d 2d       	mov	r22, r13
+     e00:	40 e0       	ldi	r20, 0x00	; 0
+     e02:	19 dc       	rcall	.-1998   	; 0x636 <Set_Port_Bit>
+     e04:	4a e1       	ldi	r20, 0x1A	; 26
+     e06:	4a 95       	dec	r20
+     e08:	f1 f7       	brne	.-4      	; 0xe06 <Write_Ps2_Byte+0xd8>
+     e0a:	00 c0       	rjmp	.+0      	; 0xe0c <Write_Ps2_Byte+0xde>
+     e0c:	c8 01       	movw	r24, r16
+     e0e:	6d 2d       	mov	r22, r13
+     e10:	41 e0       	ldi	r20, 0x01	; 1
+     e12:	11 dc       	rcall	.-2014   	; 0x636 <Set_Port_Bit>
+     e14:	8a 81       	ldd	r24, Y+2	; 0x02
+     e16:	8f 5f       	subi	r24, 0xFF	; 255
+     e18:	8a 83       	std	Y+2, r24	; 0x02
+     e1a:	8a 81       	ldd	r24, Y+2	; 0x02
+     e1c:	8b 30       	cpi	r24, 0x0B	; 11
+     e1e:	d8 f2       	brcs	.-74     	; 0xdd6 <Write_Ps2_Byte+0xa8>
+     e20:	60 96       	adiw	r28, 0x10	; 16
+     e22:	0f b6       	in	r0, 0x3f	; 63
+     e24:	f8 94       	cli
+     e26:	de bf       	out	0x3e, r29	; 62
+     e28:	0f be       	out	0x3f, r0	; 63
+     e2a:	cd bf       	out	0x3d, r28	; 61
+     e2c:	cf 91       	pop	r28
+     e2e:	df 91       	pop	r29
+     e30:	1f 91       	pop	r17
+     e32:	0f 91       	pop	r16
+     e34:	ff 90       	pop	r15
+     e36:	ef 90       	pop	r14
+     e38:	df 90       	pop	r13
+     e3a:	cf 90       	pop	r12
+     e3c:	08 95       	ret
+
+00000e3e <Push_PS2_Byte>:
+     e3e:	8f 92       	push	r8
+     e40:	9f 92       	push	r9
+     e42:	af 92       	push	r10
+     e44:	bf 92       	push	r11
+     e46:	cf 92       	push	r12
+     e48:	df 92       	push	r13
+     e4a:	ef 92       	push	r14
+     e4c:	ff 92       	push	r15
+     e4e:	0f 93       	push	r16
+     e50:	1f 93       	push	r17
+     e52:	df 93       	push	r29
+     e54:	cf 93       	push	r28
+     e56:	cd b7       	in	r28, 0x3d	; 61
+     e58:	de b7       	in	r29, 0x3e	; 62
+     e5a:	60 97       	sbiw	r28, 0x10	; 16
+     e5c:	0f b6       	in	r0, 0x3f	; 63
+     e5e:	f8 94       	cli
+     e60:	de bf       	out	0x3e, r29	; 62
+     e62:	0f be       	out	0x3f, r0	; 63
+     e64:	cd bf       	out	0x3d, r28	; 61
+     e66:	5c 01       	movw	r10, r24
+     e68:	6b 01       	movw	r12, r22
+     e6a:	84 2e       	mov	r8, r20
+     e6c:	92 2e       	mov	r9, r18
+     e6e:	19 82       	std	Y+1, r1	; 0x01
+     e70:	1a 82       	std	Y+2, r1	; 0x02
+     e72:	1b 82       	std	Y+3, r1	; 0x03
+     e74:	1c 82       	std	Y+4, r1	; 0x04
+     e76:	26 e0       	ldi	r18, 0x06	; 6
+     e78:	e2 2e       	mov	r14, r18
+     e7a:	f1 2c       	mov	r15, r1
+     e7c:	ec 0e       	add	r14, r28
+     e7e:	fd 1e       	adc	r15, r29
+     e80:	c7 01       	movw	r24, r14
+     e82:	60 e0       	ldi	r22, 0x00	; 0
+     e84:	70 e0       	ldi	r23, 0x00	; 0
+     e86:	4b e0       	ldi	r20, 0x0B	; 11
+     e88:	50 e0       	ldi	r21, 0x00	; 0
+     e8a:	b5 d2       	rcall	.+1386   	; 0x13f6 <memset>
+     e8c:	1d 82       	std	Y+5, r1	; 0x05
+     e8e:	1b 82       	std	Y+3, r1	; 0x03
+     e90:	21 e0       	ldi	r18, 0x01	; 1
+     e92:	10 e0       	ldi	r17, 0x00	; 0
+     e94:	31 e0       	ldi	r19, 0x01	; 1
+     e96:	1a c0       	rjmp	.+52     	; 0xecc <Push_PS2_Byte+0x8e>
+     e98:	eb 81       	ldd	r30, Y+3	; 0x03
+     e9a:	f0 e0       	ldi	r31, 0x00	; 0
+     e9c:	31 96       	adiw	r30, 0x01	; 1
+     e9e:	8b 81       	ldd	r24, Y+3	; 0x03
+     ea0:	a8 01       	movw	r20, r16
+     ea2:	02 c0       	rjmp	.+4      	; 0xea8 <Push_PS2_Byte+0x6a>
+     ea4:	55 95       	asr	r21
+     ea6:	47 95       	ror	r20
+     ea8:	8a 95       	dec	r24
+     eaa:	e2 f7       	brpl	.-8      	; 0xea4 <Push_PS2_Byte+0x66>
+     eac:	ca 01       	movw	r24, r20
+     eae:	81 70       	andi	r24, 0x01	; 1
+     eb0:	ee 0d       	add	r30, r14
+     eb2:	ff 1d       	adc	r31, r15
+     eb4:	80 83       	st	Z, r24
+     eb6:	eb 81       	ldd	r30, Y+3	; 0x03
+     eb8:	f0 e0       	ldi	r31, 0x00	; 0
+     eba:	31 96       	adiw	r30, 0x01	; 1
+     ebc:	ee 0d       	add	r30, r14
+     ebe:	ff 1d       	adc	r31, r15
+     ec0:	80 81       	ld	r24, Z
+     ec2:	81 11       	cpse	r24, r1
+     ec4:	23 27       	eor	r18, r19
+     ec6:	8b 81       	ldd	r24, Y+3	; 0x03
+     ec8:	8f 5f       	subi	r24, 0xFF	; 255
+     eca:	8b 83       	std	Y+3, r24	; 0x03
+     ecc:	8b 81       	ldd	r24, Y+3	; 0x03
+     ece:	88 30       	cpi	r24, 0x08	; 8
+     ed0:	18 f3       	brcs	.-58     	; 0xe98 <Push_PS2_Byte+0x5a>
+     ed2:	2f 87       	std	Y+15, r18	; 0x0f
+     ed4:	81 e0       	ldi	r24, 0x01	; 1
+     ed6:	88 8b       	std	Y+16, r24	; 0x10
+     ed8:	1b 82       	std	Y+3, r1	; 0x03
+     eda:	8e 01       	movw	r16, r28
+     edc:	0a 5f       	subi	r16, 0xFA	; 250
+     ede:	1f 4f       	sbci	r17, 0xFF	; 255
+     ee0:	ee 24       	eor	r14, r14
+     ee2:	e3 94       	inc	r14
+     ee4:	29 c0       	rjmp	.+82     	; 0xf38 <Push_PS2_Byte+0xfa>
+     ee6:	1c 82       	std	Y+4, r1	; 0x04
+     ee8:	19 82       	std	Y+1, r1	; 0x01
+     eea:	20 c0       	rjmp	.+64     	; 0xf2c <Push_PS2_Byte+0xee>
+     eec:	f5 01       	movw	r30, r10
+     eee:	80 81       	ld	r24, Z
+     ef0:	8d 83       	std	Y+5, r24	; 0x05
+     ef2:	8d 81       	ldd	r24, Y+5	; 0x05
+     ef4:	90 e0       	ldi	r25, 0x00	; 0
+     ef6:	08 2c       	mov	r0, r8
+     ef8:	02 c0       	rjmp	.+4      	; 0xefe <Push_PS2_Byte+0xc0>
+     efa:	95 95       	asr	r25
+     efc:	87 95       	ror	r24
+     efe:	0a 94       	dec	r0
+     f00:	e2 f7       	brpl	.-8      	; 0xefa <Push_PS2_Byte+0xbc>
+     f02:	81 70       	andi	r24, 0x01	; 1
+     f04:	8a 83       	std	Y+2, r24	; 0x02
+     f06:	8a 81       	ldd	r24, Y+2	; 0x02
+     f08:	81 30       	cpi	r24, 0x01	; 1
+     f0a:	61 f4       	brne	.+24     	; 0xf24 <Push_PS2_Byte+0xe6>
+     f0c:	8c 81       	ldd	r24, Y+4	; 0x04
+     f0e:	88 23       	and	r24, r24
+     f10:	81 f4       	brne	.+32     	; 0xf32 <Push_PS2_Byte+0xf4>
+     f12:	8b 81       	ldd	r24, Y+3	; 0x03
+     f14:	f8 01       	movw	r30, r16
+     f16:	e8 0f       	add	r30, r24
+     f18:	f1 1d       	adc	r31, r1
+     f1a:	40 81       	ld	r20, Z
+     f1c:	c6 01       	movw	r24, r12
+     f1e:	69 2d       	mov	r22, r9
+     f20:	8a db       	rcall	.-2284   	; 0x636 <Set_Port_Bit>
+     f22:	01 c0       	rjmp	.+2      	; 0xf26 <Push_PS2_Byte+0xe8>
+     f24:	ec 82       	std	Y+4, r14	; 0x04
+     f26:	89 81       	ldd	r24, Y+1	; 0x01
+     f28:	8f 5f       	subi	r24, 0xFF	; 255
+     f2a:	89 83       	std	Y+1, r24	; 0x01
+     f2c:	89 81       	ldd	r24, Y+1	; 0x01
+     f2e:	84 36       	cpi	r24, 0x64	; 100
+     f30:	e8 f2       	brcs	.-70     	; 0xeec <Push_PS2_Byte+0xae>
+     f32:	8b 81       	ldd	r24, Y+3	; 0x03
+     f34:	8f 5f       	subi	r24, 0xFF	; 255
+     f36:	8b 83       	std	Y+3, r24	; 0x03
+     f38:	8b 81       	ldd	r24, Y+3	; 0x03
+     f3a:	8b 30       	cpi	r24, 0x0B	; 11
+     f3c:	a0 f2       	brcs	.-88     	; 0xee6 <Push_PS2_Byte+0xa8>
+     f3e:	60 96       	adiw	r28, 0x10	; 16
+     f40:	0f b6       	in	r0, 0x3f	; 63
+     f42:	f8 94       	cli
+     f44:	de bf       	out	0x3e, r29	; 62
+     f46:	0f be       	out	0x3f, r0	; 63
+     f48:	cd bf       	out	0x3d, r28	; 61
+     f4a:	cf 91       	pop	r28
+     f4c:	df 91       	pop	r29
+     f4e:	1f 91       	pop	r17
+     f50:	0f 91       	pop	r16
+     f52:	ff 90       	pop	r15
+     f54:	ef 90       	pop	r14
+     f56:	df 90       	pop	r13
+     f58:	cf 90       	pop	r12
+     f5a:	bf 90       	pop	r11
+     f5c:	af 90       	pop	r10
+     f5e:	9f 90       	pop	r9
+     f60:	8f 90       	pop	r8
+     f62:	08 95       	ret
+
+00000f64 <Write_Ps2_HOST_REQUEST>:
+     f64:	0f 93       	push	r16
+     f66:	1f 93       	push	r17
+     f68:	cf 93       	push	r28
+     f6a:	df 93       	push	r29
+     f6c:	ec 01       	movw	r28, r24
+     f6e:	16 2f       	mov	r17, r22
+     f70:	04 2f       	mov	r16, r20
+     f72:	64 2f       	mov	r22, r20
+     f74:	41 e0       	ldi	r20, 0x01	; 1
+     f76:	5f db       	rcall	.-2370   	; 0x636 <Set_Port_Bit>
+     f78:	ce 01       	movw	r24, r28
+     f7a:	61 2f       	mov	r22, r17
+     f7c:	40 e0       	ldi	r20, 0x00	; 0
+     f7e:	5b db       	rcall	.-2378   	; 0x636 <Set_Port_Bit>
+     f80:	80 ea       	ldi	r24, 0xA0	; 160
+     f82:	8a 95       	dec	r24
+     f84:	f1 f7       	brne	.-4      	; 0xf82 <Write_Ps2_HOST_REQUEST+0x1e>
+     f86:	ce 01       	movw	r24, r28
+     f88:	60 2f       	mov	r22, r16
+     f8a:	40 e0       	ldi	r20, 0x00	; 0
+     f8c:	54 db       	rcall	.-2392   	; 0x636 <Set_Port_Bit>
+     f8e:	8a e1       	ldi	r24, 0x1A	; 26
+     f90:	8a 95       	dec	r24
+     f92:	f1 f7       	brne	.-4      	; 0xf90 <Write_Ps2_HOST_REQUEST+0x2c>
+     f94:	00 c0       	rjmp	.+0      	; 0xf96 <Write_Ps2_HOST_REQUEST+0x32>
+     f96:	ce 01       	movw	r24, r28
+     f98:	61 2f       	mov	r22, r17
+     f9a:	41 e0       	ldi	r20, 0x01	; 1
+     f9c:	4c db       	rcall	.-2408   	; 0x636 <Set_Port_Bit>
+     f9e:	df 91       	pop	r29
+     fa0:	cf 91       	pop	r28
+     fa2:	1f 91       	pop	r17
+     fa4:	0f 91       	pop	r16
+     fa6:	08 95       	ret
+
+00000fa8 <EnableDeviceInterrupt>:
+     fa8:	88 23       	and	r24, r24
+     faa:	39 f0       	breq	.+14     	; 0xfba <EnableDeviceInterrupt+0x12>
+     fac:	e8 9a       	sbi	0x1d, 0	; 29
+     fae:	80 91 69 00 	lds	r24, 0x0069
+     fb2:	82 60       	ori	r24, 0x02	; 2
+     fb4:	80 93 69 00 	sts	0x0069, r24
+     fb8:	08 95       	ret
+     fba:	1d ba       	out	0x1d, r1	; 29
+     fbc:	10 92 69 00 	sts	0x0069, r1
+     fc0:	08 95       	ret
+
+00000fc2 <Ps2Init>:
+     fc2:	10 92 4b 01 	sts	0x014B, r1
+     fc6:	10 92 2a 01 	sts	0x012A, r1
+     fca:	10 92 29 01 	sts	0x0129, r1
+     fce:	10 92 08 01 	sts	0x0108, r1
+     fd2:	81 e0       	ldi	r24, 0x01	; 1
+     fd4:	e9 df       	rcall	.-46     	; 0xfa8 <EnableDeviceInterrupt>
+     fd6:	e8 e6       	ldi	r30, 0x68	; 104
+     fd8:	f0 e0       	ldi	r31, 0x00	; 0
+     fda:	80 81       	ld	r24, Z
+     fdc:	84 60       	ori	r24, 0x04	; 4
+     fde:	80 83       	st	Z, r24
+     fe0:	ed e6       	ldi	r30, 0x6D	; 109
+     fe2:	f0 e0       	ldi	r31, 0x00	; 0
+     fe4:	80 81       	ld	r24, Z
+     fe6:	80 64       	ori	r24, 0x40	; 64
+     fe8:	80 83       	st	Z, r24
+     fea:	08 95       	ret
+
+00000fec <__vector_1>:
+     fec:	1f 92       	push	r1
+     fee:	0f 92       	push	r0
+     ff0:	0f b6       	in	r0, 0x3f	; 63
+     ff2:	0f 92       	push	r0
+     ff4:	11 24       	eor	r1, r1
+     ff6:	2f 93       	push	r18
+     ff8:	3f 93       	push	r19
+     ffa:	4f 93       	push	r20
+     ffc:	5f 93       	push	r21
+     ffe:	6f 93       	push	r22
+    1000:	7f 93       	push	r23
+    1002:	8f 93       	push	r24
+    1004:	9f 93       	push	r25
+    1006:	af 93       	push	r26
+    1008:	bf 93       	push	r27
+    100a:	ef 93       	push	r30
+    100c:	ff 93       	push	r31
+    100e:	df 93       	push	r29
+    1010:	cf 93       	push	r28
+    1012:	0f 92       	push	r0
+    1014:	cd b7       	in	r28, 0x3d	; 61
+    1016:	de b7       	in	r29, 0x3e	; 62
+    1018:	19 82       	std	Y+1, r1	; 0x01
+    101a:	f8 94       	cli
+    101c:	89 e2       	ldi	r24, 0x29	; 41
+    101e:	90 e0       	ldi	r25, 0x00	; 0
+    1020:	62 e0       	ldi	r22, 0x02	; 2
+    1022:	47 e0       	ldi	r20, 0x07	; 7
+    1024:	9e 01       	movw	r18, r28
+    1026:	2f 5f       	subi	r18, 0xFF	; 255
+    1028:	3f 4f       	sbci	r19, 0xFF	; 255
+    102a:	13 dd       	rcall	.-1498   	; 0xa52 <Sniffer_PS2_Byte>
+    102c:	88 23       	and	r24, r24
+    102e:	91 f4       	brne	.+36     	; 0x1054 <__vector_1+0x68>
+    1030:	e0 91 4b 01 	lds	r30, 0x014B
+    1034:	ef 5f       	subi	r30, 0xFF	; 255
+    1036:	ef 71       	andi	r30, 0x1F	; 31
+    1038:	e0 93 4b 01 	sts	0x014B, r30
+    103c:	80 91 2a 01 	lds	r24, 0x012A
+    1040:	f0 e0       	ldi	r31, 0x00	; 0
+    1042:	e5 5d       	subi	r30, 0xD5	; 213
+    1044:	fe 4f       	sbci	r31, 0xFE	; 254
+    1046:	89 81       	ldd	r24, Y+1	; 0x01
+    1048:	80 83       	st	Z, r24
+    104a:	88 e2       	ldi	r24, 0x28	; 40
+    104c:	90 e0       	ldi	r25, 0x00	; 0
+    104e:	61 e0       	ldi	r22, 0x01	; 1
+    1050:	40 e0       	ldi	r20, 0x00	; 0
+    1052:	f1 da       	rcall	.-2590   	; 0x636 <Set_Port_Bit>
+    1054:	78 94       	sei
+    1056:	0f 90       	pop	r0
+    1058:	cf 91       	pop	r28
+    105a:	df 91       	pop	r29
+    105c:	ff 91       	pop	r31
+    105e:	ef 91       	pop	r30
+    1060:	bf 91       	pop	r27
+    1062:	af 91       	pop	r26
+    1064:	9f 91       	pop	r25
+    1066:	8f 91       	pop	r24
+    1068:	7f 91       	pop	r23
+    106a:	6f 91       	pop	r22
+    106c:	5f 91       	pop	r21
+    106e:	4f 91       	pop	r20
+    1070:	3f 91       	pop	r19
+    1072:	2f 91       	pop	r18
+    1074:	0f 90       	pop	r0
+    1076:	0f be       	out	0x3f, r0	; 63
+    1078:	0f 90       	pop	r0
+    107a:	1f 90       	pop	r1
+    107c:	18 95       	reti
+
+0000107e <IsDataInPs2SnifferBuffer>:
+    107e:	20 91 4b 01 	lds	r18, 0x014B
+    1082:	90 91 2a 01 	lds	r25, 0x012A
+    1086:	81 e0       	ldi	r24, 0x01	; 1
+    1088:	29 17       	cp	r18, r25
+    108a:	09 f4       	brne	.+2      	; 0x108e <IsDataInPs2SnifferBuffer+0x10>
+    108c:	80 e0       	ldi	r24, 0x00	; 0
+    108e:	08 95       	ret
+
+00001090 <GetDataFromPs2SnifferBuffer>:
+    1090:	80 91 2a 01 	lds	r24, 0x012A
+    1094:	8f 5f       	subi	r24, 0xFF	; 255
+    1096:	8f 71       	andi	r24, 0x1F	; 31
+    1098:	80 93 2a 01 	sts	0x012A, r24
+    109c:	eb e2       	ldi	r30, 0x2B	; 43
+    109e:	f1 e0       	ldi	r31, 0x01	; 1
+    10a0:	e8 0f       	add	r30, r24
+    10a2:	f1 1d       	adc	r31, r1
+    10a4:	80 81       	ld	r24, Z
+    10a6:	08 95       	ret
+
+000010a8 <__vector_5>:
+    10a8:	1f 92       	push	r1
+    10aa:	0f 92       	push	r0
+    10ac:	0f b6       	in	r0, 0x3f	; 63
+    10ae:	0f 92       	push	r0
+    10b0:	11 24       	eor	r1, r1
+    10b2:	0f 93       	push	r16
+    10b4:	1f 93       	push	r17
+    10b6:	2f 93       	push	r18
+    10b8:	3f 93       	push	r19
+    10ba:	4f 93       	push	r20
+    10bc:	5f 93       	push	r21
+    10be:	6f 93       	push	r22
+    10c0:	7f 93       	push	r23
+    10c2:	8f 93       	push	r24
+    10c4:	9f 93       	push	r25
+    10c6:	af 93       	push	r26
+    10c8:	bf 93       	push	r27
+    10ca:	ef 93       	push	r30
+    10cc:	ff 93       	push	r31
+    10ce:	df 93       	push	r29
+    10d0:	cf 93       	push	r28
+    10d2:	00 d0       	rcall	.+0      	; 0x10d4 <__vector_5+0x2c>
+    10d4:	00 d0       	rcall	.+0      	; 0x10d6 <__vector_5+0x2e>
+    10d6:	cd b7       	in	r28, 0x3d	; 61
+    10d8:	de b7       	in	r29, 0x3e	; 62
+    10da:	19 82       	std	Y+1, r1	; 0x01
+    10dc:	1a 82       	std	Y+2, r1	; 0x02
+    10de:	1b 82       	std	Y+3, r1	; 0x03
+    10e0:	82 e0       	ldi	r24, 0x02	; 2
+    10e2:	8c 83       	std	Y+4, r24	; 0x04
+    10e4:	89 b1       	in	r24, 0x09	; 9
+    10e6:	82 95       	swap	r24
+    10e8:	86 95       	lsr	r24
+    10ea:	86 95       	lsr	r24
+    10ec:	81 70       	andi	r24, 0x01	; 1
+    10ee:	89 83       	std	Y+1, r24	; 0x01
+    10f0:	89 81       	ldd	r24, Y+1	; 0x01
+    10f2:	88 23       	and	r24, r24
+    10f4:	61 f5       	brne	.+88     	; 0x114e <__vector_5+0xa6>
+    10f6:	88 e2       	ldi	r24, 0x28	; 40
+    10f8:	90 e0       	ldi	r25, 0x00	; 0
+    10fa:	62 e0       	ldi	r22, 0x02	; 2
+    10fc:	41 e0       	ldi	r20, 0x01	; 1
+    10fe:	9b da       	rcall	.-2762   	; 0x636 <Set_Port_Bit>
+    1100:	b9 da       	rcall	.-2702   	; 0x674 <ReadingFromHostDirection>
+    1102:	89 e2       	ldi	r24, 0x29	; 41
+    1104:	90 e0       	ldi	r25, 0x00	; 0
+    1106:	6b e2       	ldi	r22, 0x2B	; 43
+    1108:	70 e0       	ldi	r23, 0x00	; 0
+    110a:	45 e0       	ldi	r20, 0x05	; 5
+    110c:	26 e0       	ldi	r18, 0x06	; 6
+    110e:	8e 01       	movw	r16, r28
+    1110:	0e 5f       	subi	r16, 0xFE	; 254
+    1112:	1f 4f       	sbci	r17, 0xFF	; 255
+    1114:	48 dd       	rcall	.-1392   	; 0xba6 <Read_Ps2_Byte>
+    1116:	8c 83       	std	Y+4, r24	; 0x04
+    1118:	a8 da       	rcall	.-2736   	; 0x66a <SetDeviceToHostDirection>
+    111a:	8b e2       	ldi	r24, 0x2B	; 43
+    111c:	90 e0       	ldi	r25, 0x00	; 0
+    111e:	65 e0       	ldi	r22, 0x05	; 5
+    1120:	46 e0       	ldi	r20, 0x06	; 6
+    1122:	cb dd       	rcall	.-1130   	; 0xcba <Write_Ps2_ACK>
+    1124:	8c 81       	ldd	r24, Y+4	; 0x04
+    1126:	88 23       	and	r24, r24
+    1128:	89 f4       	brne	.+34     	; 0x114c <__vector_5+0xa4>
+    112a:	80 91 29 01 	lds	r24, 0x0129
+    112e:	8f 5f       	subi	r24, 0xFF	; 255
+    1130:	8f 71       	andi	r24, 0x1F	; 31
+    1132:	8b 83       	std	Y+3, r24	; 0x03
+    1134:	8b 81       	ldd	r24, Y+3	; 0x03
+    1136:	80 93 29 01 	sts	0x0129, r24
+    113a:	8b 81       	ldd	r24, Y+3	; 0x03
+    113c:	80 91 08 01 	lds	r24, 0x0108
+    1140:	eb 81       	ldd	r30, Y+3	; 0x03
+    1142:	8a 81       	ldd	r24, Y+2	; 0x02
+    1144:	f0 e0       	ldi	r31, 0x00	; 0
+    1146:	e7 5f       	subi	r30, 0xF7	; 247
+    1148:	fe 4f       	sbci	r31, 0xFE	; 254
+    114a:	80 83       	st	Z, r24
+    114c:	98 da       	rcall	.-2768   	; 0x67e <ListeningtDirection>
+    114e:	24 96       	adiw	r28, 0x04	; 4
+    1150:	de bf       	out	0x3e, r29	; 62
+    1152:	cd bf       	out	0x3d, r28	; 61
+    1154:	cf 91       	pop	r28
+    1156:	df 91       	pop	r29
+    1158:	ff 91       	pop	r31
+    115a:	ef 91       	pop	r30
+    115c:	bf 91       	pop	r27
+    115e:	af 91       	pop	r26
+    1160:	9f 91       	pop	r25
+    1162:	8f 91       	pop	r24
+    1164:	7f 91       	pop	r23
+    1166:	6f 91       	pop	r22
+    1168:	5f 91       	pop	r21
+    116a:	4f 91       	pop	r20
+    116c:	3f 91       	pop	r19
+    116e:	2f 91       	pop	r18
+    1170:	1f 91       	pop	r17
+    1172:	0f 91       	pop	r16
+    1174:	0f 90       	pop	r0
+    1176:	0f be       	out	0x3f, r0	; 63
+    1178:	0f 90       	pop	r0
+    117a:	1f 90       	pop	r1
+    117c:	18 95       	reti
+
+0000117e <IsDataInPs2HostBuffer>:
+    117e:	20 91 29 01 	lds	r18, 0x0129
+    1182:	90 91 08 01 	lds	r25, 0x0108
+    1186:	81 e0       	ldi	r24, 0x01	; 1
+    1188:	29 17       	cp	r18, r25
+    118a:	09 f4       	brne	.+2      	; 0x118e <IsDataInPs2HostBuffer+0x10>
+    118c:	80 e0       	ldi	r24, 0x00	; 0
+    118e:	08 95       	ret
+
+00001190 <GetDataFromPs2HostBuffer>:
+    1190:	80 91 08 01 	lds	r24, 0x0108
+    1194:	8f 5f       	subi	r24, 0xFF	; 255
+    1196:	8f 71       	andi	r24, 0x1F	; 31
+    1198:	80 93 08 01 	sts	0x0108, r24
+    119c:	e9 e0       	ldi	r30, 0x09	; 9
+    119e:	f1 e0       	ldi	r31, 0x01	; 1
+    11a0:	e8 0f       	add	r30, r24
+    11a2:	f1 1d       	adc	r31, r1
+    11a4:	80 81       	ld	r24, Z
+    11a6:	08 95       	ret
+
+000011a8 <GetScanCode>:
+    11a8:	df 93       	push	r29
+    11aa:	cf 93       	push	r28
+    11ac:	00 d0       	rcall	.+0      	; 0x11ae <GetScanCode+0x6>
+    11ae:	00 d0       	rcall	.+0      	; 0x11b0 <GetScanCode+0x8>
+    11b0:	cd b7       	in	r28, 0x3d	; 61
+    11b2:	de b7       	in	r29, 0x3e	; 62
+    11b4:	8c 83       	std	Y+4, r24	; 0x04
+    11b6:	19 82       	std	Y+1, r1	; 0x01
+    11b8:	1a 82       	std	Y+2, r1	; 0x02
+    11ba:	1b 82       	std	Y+3, r1	; 0x03
+    11bc:	80 e8       	ldi	r24, 0x80	; 128
+    11be:	8a 83       	std	Y+2, r24	; 0x02
+    11c0:	9c 81       	ldd	r25, Y+4	; 0x04
+    11c2:	8a 81       	ldd	r24, Y+2	; 0x02
+    11c4:	98 17       	cp	r25, r24
+    11c6:	78 f5       	brcc	.+94     	; 0x1226 <GetScanCode+0x7e>
+    11c8:	2c 81       	ldd	r18, Y+4	; 0x04
+    11ca:	30 e0       	ldi	r19, 0x00	; 0
+    11cc:	8b e0       	ldi	r24, 0x0B	; 11
+    11ce:	90 e0       	ldi	r25, 0x00	; 0
+    11d0:	28 9f       	mul	r18, r24
+    11d2:	f0 01       	movw	r30, r0
+    11d4:	29 9f       	mul	r18, r25
+    11d6:	f0 0d       	add	r31, r0
+    11d8:	38 9f       	mul	r19, r24
+    11da:	f0 0d       	add	r31, r0
+    11dc:	11 24       	eor	r1, r1
+    11de:	e2 58       	subi	r30, 0x82	; 130
+    11e0:	ff 4f       	sbci	r31, 0xFF	; 255
+    11e2:	e4 91       	lpm	r30, Z+
+    11e4:	eb 83       	std	Y+3, r30	; 0x03
+    11e6:	19 82       	std	Y+1, r1	; 0x01
+    11e8:	17 c0       	rjmp	.+46     	; 0x1218 <GetScanCode+0x70>
+    11ea:	29 81       	ldd	r18, Y+1	; 0x01
+    11ec:	db 01       	movw	r26, r22
+    11ee:	a2 0f       	add	r26, r18
+    11f0:	b1 1d       	adc	r27, r1
+    11f2:	2c 81       	ldd	r18, Y+4	; 0x04
+    11f4:	49 81       	ldd	r20, Y+1	; 0x01
+    11f6:	30 e0       	ldi	r19, 0x00	; 0
+    11f8:	28 9f       	mul	r18, r24
+    11fa:	f0 01       	movw	r30, r0
+    11fc:	29 9f       	mul	r18, r25
+    11fe:	f0 0d       	add	r31, r0
+    1200:	38 9f       	mul	r19, r24
+    1202:	f0 0d       	add	r31, r0
+    1204:	11 24       	eor	r1, r1
+    1206:	e4 0f       	add	r30, r20
+    1208:	f1 1d       	adc	r31, r1
+    120a:	e1 58       	subi	r30, 0x81	; 129
+    120c:	ff 4f       	sbci	r31, 0xFF	; 255
+    120e:	e4 91       	lpm	r30, Z+
+    1210:	ec 93       	st	X, r30
+    1212:	29 81       	ldd	r18, Y+1	; 0x01
+    1214:	2f 5f       	subi	r18, 0xFF	; 255
+    1216:	29 83       	std	Y+1, r18	; 0x01
+    1218:	39 81       	ldd	r19, Y+1	; 0x01
+    121a:	2b 81       	ldd	r18, Y+3	; 0x03
+    121c:	32 17       	cp	r19, r18
+    121e:	28 f3       	brcs	.-54     	; 0x11ea <GetScanCode+0x42>
+    1220:	2b 81       	ldd	r18, Y+3	; 0x03
+    1222:	30 e0       	ldi	r19, 0x00	; 0
+    1224:	02 c0       	rjmp	.+4      	; 0x122a <GetScanCode+0x82>
+    1226:	20 e0       	ldi	r18, 0x00	; 0
+    1228:	30 e0       	ldi	r19, 0x00	; 0
+    122a:	c9 01       	movw	r24, r18
+    122c:	0f 90       	pop	r0
+    122e:	0f 90       	pop	r0
+    1230:	0f 90       	pop	r0
+    1232:	0f 90       	pop	r0
+    1234:	cf 91       	pop	r28
+    1236:	df 91       	pop	r29
+    1238:	08 95       	ret
+
+0000123a <USART_Init>:
+    123a:	90 93 c5 00 	sts	0x00C5, r25
+    123e:	80 93 c4 00 	sts	0x00C4, r24
+    1242:	e1 ec       	ldi	r30, 0xC1	; 193
+    1244:	f0 e0       	ldi	r31, 0x00	; 0
+    1246:	80 81       	ld	r24, Z
+    1248:	88 61       	ori	r24, 0x18	; 24
+    124a:	80 83       	st	Z, r24
+    124c:	86 e0       	ldi	r24, 0x06	; 6
+    124e:	80 93 c2 00 	sts	0x00C2, r24
+    1252:	80 81       	ld	r24, Z
+    1254:	80 68       	ori	r24, 0x80	; 128
+    1256:	80 83       	st	Z, r24
+    1258:	10 92 4c 01 	sts	0x014C, r1
+    125c:	10 92 cd 01 	sts	0x01CD, r1
+    1260:	10 92 cf 01 	sts	0x01CF, r1
+    1264:	10 92 ce 01 	sts	0x01CE, r1
+    1268:	08 95       	ret
+
+0000126a <__vector_18>:
+    126a:	1f 92       	push	r1
+    126c:	0f 92       	push	r0
+    126e:	0f b6       	in	r0, 0x3f	; 63
+    1270:	0f 92       	push	r0
+    1272:	11 24       	eor	r1, r1
+    1274:	2f 93       	push	r18
+    1276:	3f 93       	push	r19
+    1278:	4f 93       	push	r20
+    127a:	5f 93       	push	r21
+    127c:	6f 93       	push	r22
+    127e:	7f 93       	push	r23
+    1280:	8f 93       	push	r24
+    1282:	9f 93       	push	r25
+    1284:	af 93       	push	r26
+    1286:	bf 93       	push	r27
+    1288:	ef 93       	push	r30
+    128a:	ff 93       	push	r31
+    128c:	88 e2       	ldi	r24, 0x28	; 40
+    128e:	90 e0       	ldi	r25, 0x00	; 0
+    1290:	60 e0       	ldi	r22, 0x00	; 0
+    1292:	40 e0       	ldi	r20, 0x00	; 0
+    1294:	d0 d9       	rcall	.-3168   	; 0x636 <Set_Port_Bit>
+    1296:	90 91 c6 00 	lds	r25, 0x00C6
+    129a:	80 91 cd 01 	lds	r24, 0x01CD
+    129e:	8f 5f       	subi	r24, 0xFF	; 255
+    12a0:	8f 77       	andi	r24, 0x7F	; 127
+    12a2:	80 93 cd 01 	sts	0x01CD, r24
+    12a6:	20 91 4c 01 	lds	r18, 0x014C
+    12aa:	ed e4       	ldi	r30, 0x4D	; 77
+    12ac:	f1 e0       	ldi	r31, 0x01	; 1
+    12ae:	e8 0f       	add	r30, r24
+    12b0:	f1 1d       	adc	r31, r1
+    12b2:	90 83       	st	Z, r25
+    12b4:	ff 91       	pop	r31
+    12b6:	ef 91       	pop	r30
+    12b8:	bf 91       	pop	r27
+    12ba:	af 91       	pop	r26
+    12bc:	9f 91       	pop	r25
+    12be:	8f 91       	pop	r24
+    12c0:	7f 91       	pop	r23
+    12c2:	6f 91       	pop	r22
+    12c4:	5f 91       	pop	r21
+    12c6:	4f 91       	pop	r20
+    12c8:	3f 91       	pop	r19
+    12ca:	2f 91       	pop	r18
+    12cc:	0f 90       	pop	r0
+    12ce:	0f be       	out	0x3f, r0	; 63
+    12d0:	0f 90       	pop	r0
+    12d2:	1f 90       	pop	r1
+    12d4:	18 95       	reti
+
+000012d6 <__vector_19>:
+    12d6:	1f 92       	push	r1
+    12d8:	0f 92       	push	r0
+    12da:	0f b6       	in	r0, 0x3f	; 63
+    12dc:	0f 92       	push	r0
+    12de:	11 24       	eor	r1, r1
+    12e0:	8f 93       	push	r24
+    12e2:	9f 93       	push	r25
+    12e4:	ef 93       	push	r30
+    12e6:	ff 93       	push	r31
+    12e8:	90 91 ce 01 	lds	r25, 0x01CE
+    12ec:	80 91 cf 01 	lds	r24, 0x01CF
+    12f0:	98 17       	cp	r25, r24
+    12f2:	69 f0       	breq	.+26     	; 0x130e <__vector_19+0x38>
+    12f4:	e0 91 cf 01 	lds	r30, 0x01CF
+    12f8:	ef 5f       	subi	r30, 0xFF	; 255
+    12fa:	ef 77       	andi	r30, 0x7F	; 127
+    12fc:	e0 93 cf 01 	sts	0x01CF, r30
+    1300:	f0 e0       	ldi	r31, 0x00	; 0
+    1302:	e0 53       	subi	r30, 0x30	; 48
+    1304:	fe 4f       	sbci	r31, 0xFE	; 254
+    1306:	80 81       	ld	r24, Z
+    1308:	80 93 c6 00 	sts	0x00C6, r24
+    130c:	05 c0       	rjmp	.+10     	; 0x1318 <__vector_19+0x42>
+    130e:	80 91 c1 00 	lds	r24, 0x00C1
+    1312:	8f 7d       	andi	r24, 0xDF	; 223
+    1314:	80 93 c1 00 	sts	0x00C1, r24
+    1318:	ff 91       	pop	r31
+    131a:	ef 91       	pop	r30
+    131c:	9f 91       	pop	r25
+    131e:	8f 91       	pop	r24
+    1320:	0f 90       	pop	r0
+    1322:	0f be       	out	0x3f, r0	; 63
+    1324:	0f 90       	pop	r0
+    1326:	1f 90       	pop	r1
+    1328:	18 95       	reti
+
+0000132a <USART_Receive>:
+    132a:	90 91 cd 01 	lds	r25, 0x01CD
+    132e:	80 91 4c 01 	lds	r24, 0x014C
+    1332:	98 17       	cp	r25, r24
+    1334:	d1 f3       	breq	.-12     	; 0x132a <USART_Receive>
+    1336:	e0 91 4c 01 	lds	r30, 0x014C
+    133a:	ef 5f       	subi	r30, 0xFF	; 255
+    133c:	ef 77       	andi	r30, 0x7F	; 127
+    133e:	e0 93 4c 01 	sts	0x014C, r30
+    1342:	f0 e0       	ldi	r31, 0x00	; 0
+    1344:	e3 5b       	subi	r30, 0xB3	; 179
+    1346:	fe 4f       	sbci	r31, 0xFE	; 254
+    1348:	80 81       	ld	r24, Z
+    134a:	08 95       	ret
+
+0000134c <USART_Transmit>:
+    134c:	90 91 ce 01 	lds	r25, 0x01CE
+    1350:	9f 5f       	subi	r25, 0xFF	; 255
+    1352:	9f 77       	andi	r25, 0x7F	; 127
+    1354:	20 91 cf 01 	lds	r18, 0x01CF
+    1358:	92 17       	cp	r25, r18
+    135a:	e1 f3       	breq	.-8      	; 0x1354 <USART_Transmit+0x8>
+    135c:	e9 2f       	mov	r30, r25
+    135e:	f0 e0       	ldi	r31, 0x00	; 0
+    1360:	e0 53       	subi	r30, 0x30	; 48
+    1362:	fe 4f       	sbci	r31, 0xFE	; 254
+    1364:	80 83       	st	Z, r24
+    1366:	90 93 ce 01 	sts	0x01CE, r25
+    136a:	80 91 c1 00 	lds	r24, 0x00C1
+    136e:	80 62       	ori	r24, 0x20	; 32
+    1370:	80 93 c1 00 	sts	0x00C1, r24
+    1374:	08 95       	ret
+
+00001376 <DataInReceiveBuffer>:
+    1376:	20 91 cd 01 	lds	r18, 0x01CD
+    137a:	90 91 4c 01 	lds	r25, 0x014C
+    137e:	81 e0       	ldi	r24, 0x01	; 1
+    1380:	29 17       	cp	r18, r25
+    1382:	09 f4       	brne	.+2      	; 0x1386 <DataInReceiveBuffer+0x10>
+    1384:	80 e0       	ldi	r24, 0x00	; 0
+    1386:	08 95       	ret
+
+00001388 <GetDataFromReceiveBuffer>:
+    1388:	80 91 4c 01 	lds	r24, 0x014C
+    138c:	8f 5f       	subi	r24, 0xFF	; 255
+    138e:	8f 77       	andi	r24, 0x7F	; 127
+    1390:	80 93 4c 01 	sts	0x014C, r24
+    1394:	ed e4       	ldi	r30, 0x4D	; 77
+    1396:	f1 e0       	ldi	r31, 0x01	; 1
+    1398:	e8 0f       	add	r30, r24
+    139a:	f1 1d       	adc	r31, r1
+    139c:	80 81       	ld	r24, Z
+    139e:	08 95       	ret
+
+000013a0 <DirectReceiveData>:
+    13a0:	80 91 c1 00 	lds	r24, 0x00C1
+    13a4:	8f 77       	andi	r24, 0x7F	; 127
+    13a6:	80 93 c1 00 	sts	0x00C1, r24
+    13aa:	80 91 c0 00 	lds	r24, 0x00C0
+    13ae:	87 ff       	sbrs	r24, 7
+    13b0:	fc cf       	rjmp	.-8      	; 0x13aa <DirectReceiveData+0xa>
+    13b2:	80 91 c6 00 	lds	r24, 0x00C6
+    13b6:	90 91 c1 00 	lds	r25, 0x00C1
+    13ba:	90 68       	ori	r25, 0x80	; 128
+    13bc:	90 93 c1 00 	sts	0x00C1, r25
+    13c0:	08 95       	ret
+
+000013c2 <DirectSendData>:
+    13c2:	90 91 c0 00 	lds	r25, 0x00C0
+    13c6:	95 ff       	sbrs	r25, 5
+    13c8:	fc cf       	rjmp	.-8      	; 0x13c2 <DirectSendData>
+    13ca:	80 93 c6 00 	sts	0x00C6, r24
+    13ce:	08 95       	ret
+
+000013d0 <DirectSendString>:
+    13d0:	ef 92       	push	r14
+    13d2:	ff 92       	push	r15
+    13d4:	cf 93       	push	r28
+    13d6:	df 93       	push	r29
+    13d8:	e8 2e       	mov	r14, r24
+    13da:	e7 01       	movw	r28, r14
+    13dc:	7e 01       	movw	r14, r28
+    13de:	f9 2e       	mov	r15, r25
+    13e0:	e7 01       	movw	r28, r14
+    13e2:	01 c0       	rjmp	.+2      	; 0x13e6 <DirectSendString+0x16>
+    13e4:	ee df       	rcall	.-36     	; 0x13c2 <DirectSendData>
+    13e6:	89 91       	ld	r24, Y+
+    13e8:	88 23       	and	r24, r24
+    13ea:	e1 f7       	brne	.-8      	; 0x13e4 <DirectSendString+0x14>
+    13ec:	df 91       	pop	r29
+    13ee:	cf 91       	pop	r28
+    13f0:	ff 90       	pop	r15
+    13f2:	ef 90       	pop	r14
+    13f4:	08 95       	ret
+
+000013f6 <memset>:
+    13f6:	dc 01       	movw	r26, r24
+    13f8:	01 c0       	rjmp	.+2      	; 0x13fc <memset+0x6>
+    13fa:	6d 93       	st	X+, r22
+    13fc:	41 50       	subi	r20, 0x01	; 1
+    13fe:	50 40       	sbci	r21, 0x00	; 0
+    1400:	e0 f7       	brcc	.-8      	; 0x13fa <memset+0x4>
+    1402:	08 95       	ret
+
+00001404 <_exit>:
+    1404:	f8 94       	cli
+
+00001406 <__stop_program>:
+    1406:	ff cf       	rjmp	.-2      	; 0x1406 <__stop_program>

@@ -1,0 +1,417 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o (exit)
+/usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+                              ./Main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+                              ./Ps2IntSupport.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+                              ./Main.o (memset)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+LOAD ./IoSupport.o
+LOAD ./Main.o
+LOAD ./Ps2.o
+LOAD ./Ps2IntSupport.o
+LOAD ./ScanCode.o
+LOAD ./USART2.o
+LOAD /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1408
+ *(.vectors)
+ .vectors       0x00000000       0x34 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x00000034       0x4a ./Main.o
+ *(.progmem*)
+ .progmem.data  0x0000007e      0x580 ./ScanCode.o
+                0x0000007e                ScanCodeList
+                0x000005fe                . = ALIGN (0x2)
+                0x000005fe                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000005fe        0x0 linker stubs
+ *(.trampolines*)
+                0x000005fe                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000005fe                __ctors_start = .
+ *(.ctors)
+                0x000005fe                __ctors_end = .
+                0x000005fe                __dtors_start = .
+ *(.dtors)
+                0x000005fe                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000005fe        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+                0x000005fe                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000005fe        0xc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000060a       0x16 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+                0x0000060a                __do_copy_data
+ .init4         0x00000620       0x10 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+                0x00000620                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000630        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+ *(.init9)
+ *(.text)
+ .text          0x00000634        0x2 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+                0x00000634                __vector_22
+                0x00000634                __vector_24
+                0x00000634                __vector_12
+                0x00000634                __bad_interrupt
+                0x00000634                __vector_6
+                0x00000634                __vector_3
+                0x00000634                __vector_23
+                0x00000634                __vector_25
+                0x00000634                __vector_11
+                0x00000634                __vector_13
+                0x00000634                __vector_17
+                0x00000634                __vector_7
+                0x00000634                __vector_4
+                0x00000634                __vector_9
+                0x00000634                __vector_2
+                0x00000634                __vector_21
+                0x00000634                __vector_15
+                0x00000634                __vector_8
+                0x00000634                __vector_14
+                0x00000634                __vector_10
+                0x00000634                __vector_16
+                0x00000634                __vector_20
+ .text          0x00000636       0x66 ./IoSupport.o
+                0x00000636                Set_Port_Bit
+                0x0000066a                SetDeviceToHostDirection
+                0x00000674                ReadingFromHostDirection
+                0x0000067e                ListeningtDirection
+                0x00000688                SetHostToDeviceDirection
+                0x00000692                WritingToDeviceDirection
+ .text          0x0000069c      0x3b6 ./Main.o
+                0x0000069c                SystemInit
+                0x000006a2                main
+ .text          0x00000a52      0x556 ./Ps2.o
+                0x00000a52                Sniffer_PS2_Byte
+                0x00000ba6                Read_Ps2_Byte
+                0x00000cba                Write_Ps2_ACK
+                0x00000d2e                Write_Ps2_Byte
+                0x00000e3e                Push_PS2_Byte
+                0x00000f64                Write_Ps2_HOST_REQUEST
+ .text          0x00000fa8      0x200 ./Ps2IntSupport.o
+                0x00000fa8                EnableDeviceInterrupt
+                0x00000fc2                Ps2Init
+                0x00000fec                __vector_1
+                0x0000107e                IsDataInPs2SnifferBuffer
+                0x00001090                GetDataFromPs2SnifferBuffer
+                0x000010a8                __vector_5
+                0x0000117e                IsDataInPs2HostBuffer
+                0x00001190                GetDataFromPs2HostBuffer
+ .text          0x000011a8       0x92 ./ScanCode.o
+                0x000011a8                GetScanCode
+ .text          0x0000123a      0x1bc ./USART2.o
+                0x0000123a                USART_Init
+                0x0000126a                __vector_18
+                0x000012d6                __vector_19
+                0x0000132a                USART_Receive
+                0x0000134c                USART_Transmit
+                0x00001376                DataInReceiveBuffer
+                0x00001388                GetDataFromReceiveBuffer
+                0x000013a0                DirectReceiveData
+                0x000013c2                DirectSendData
+                0x000013d0                DirectSendString
+ .text          0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+ .text          0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+ .text          0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+ .text          0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+                0x000013f6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+ .text.libgcc   0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc   0x000013f6        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x000013f6        0xe /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+                0x000013f6                memset
+                0x00001404                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001404        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+                0x00001404                exit
+                0x00001404                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001404        0x4 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001408                _etext = .
+
+.data           0x00800100        0x8 load address 0x00001408
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+ .data          0x00800100        0x0 ./IoSupport.o
+ .data          0x00800100        0x8 ./Main.o
+ .data          0x00800108        0x0 ./Ps2.o
+ .data          0x00800108        0x0 ./Ps2IntSupport.o
+ .data          0x00800108        0x0 ./ScanCode.o
+ .data          0x00800108        0x0 ./USART2.o
+ .data          0x00800108        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+ .data          0x00800108        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+ .data          0x00800108        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+ .data          0x00800108        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800108                . = ALIGN (0x2)
+                0x00800108                _edata = .
+                0x00800108                PROVIDE (__data_end, .)
+
+.bss            0x00800108      0x148
+                0x00800108                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800108        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+ .bss           0x00800108        0x0 ./IoSupport.o
+ .bss           0x00800108        0x0 ./Main.o
+ .bss           0x00800108        0x0 ./Ps2.o
+ .bss           0x00800108       0x44 ./Ps2IntSupport.o
+ .bss           0x0080014c        0x0 ./ScanCode.o
+ .bss           0x0080014c      0x104 ./USART2.o
+ .bss           0x00800250        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_exit.o)
+ .bss           0x00800250        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_copy_data.o)
+ .bss           0x00800250        0x0 /usr/lib/gcc/avr/4.5.3/avr4/libgcc.a(_clear_bss.o)
+ .bss           0x00800250        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800250                PROVIDE (__bss_end, .)
+                0x00001408                __data_load_start = LOADADDR (.data)
+                0x00001410                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800250        0x0
+                0x00800250                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800250                PROVIDE (__noinit_end, .)
+                0x00800250                _end = .
+                0x00800250                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x738
+ *(.stab)
+ .stab          0x00000000      0x6cc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+ .stab          0x000006cc       0x6c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/libc.a(memset.o)
+                                 0x78 (size before relaxing)
+
+.stabstr        0x00000000       0x82
+ *(.stabstr)
+ .stabstr       0x00000000       0x82 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr4/crtm88pa.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(NEW_CON232K.elf elf32-avr)
+LOAD linker stubs
